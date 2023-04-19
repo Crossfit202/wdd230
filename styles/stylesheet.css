@@ -9,7 +9,7 @@ header,
 main,
 footer {
   margin: 1.25rem auto;
-  max-width: 1500px;
+  max-width: 75%;
 }
 
 header,
