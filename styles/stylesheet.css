@@ -17,7 +17,7 @@ footer {
   background-color: cadetblue;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   font-family: "Trebuchet MS";
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -39,7 +39,7 @@ header img {
   width: 250px;
   height: 250px;
   margin-right: 350px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 h1 {
