@@ -73,3 +73,7 @@ ul {
     0 0 40px cadetblue, 0 0 70px cadetblue, 0 0 80px cadetblue,
     0 0 100px cadetblue;
 }
+
+a { 
+  color: blue;
+}
