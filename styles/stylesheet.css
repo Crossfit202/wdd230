@@ -2,7 +2,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   background-color: rgb(218, 232, 236);
-  font-family: Georgia, serif;
+  font-family: 'Righteous', cursive;
 }
 
 header,
@@ -18,7 +18,7 @@ footer {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-  font-family: "Trebuchet MS";
+  font-family: 'Righteous', cursive;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
@@ -61,6 +61,7 @@ li {
 h2 {
   font-size: 40px;
   color: #2F4B4B;
+  font-family: 'Righteous', cursive;
 }
 
 footer p {
