@@ -15,7 +15,9 @@ footer {
     1px 1px 0 #000;
 }
 
-
+header { 
+  margin-top: 0px;
+}
 footer { 
     font-size: large;
 }
