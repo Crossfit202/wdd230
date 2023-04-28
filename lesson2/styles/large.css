@@ -11,6 +11,8 @@ footer {
   color: white;
   text-align: center;
   padding: 0.5%;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 
@@ -71,4 +73,8 @@ p {
     padding: 10px;
     margin-bottom: 3em;
     font-family: 'Montagu Slab', serif;
+}
+
+a { 
+  color: blue;
 }
