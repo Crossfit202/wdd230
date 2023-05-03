@@ -80,4 +80,6 @@ p {
 a { 
   color: blue;
   font-size: x-large;
+  background-color: white;
+  padding: 3px;
 }
