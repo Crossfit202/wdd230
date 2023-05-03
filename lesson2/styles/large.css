@@ -11,8 +11,6 @@ footer {
   color: white;
   text-align: center;
   padding: 0.5%;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 
 header { 
@@ -20,7 +18,9 @@ header {
 }
 footer { 
     font-size: large;
-}
+    color: black;
+    font-size: 2em;
+  }
 
 main {
   display: grid;
