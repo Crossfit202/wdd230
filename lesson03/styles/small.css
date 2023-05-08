@@ -19,7 +19,6 @@ footer {
 	background-color: #ffff;
 	display: flex;
 	flex-flow: column;
-	align-items: left;
 	justify-content: center;
     padding: 10px;
 	
