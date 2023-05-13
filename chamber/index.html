@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site plan for Chamber of Commerce site for Jonathan Cross in WDD 230: Web Frontend Development at BYU - Idaho"
+    />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Grove City Chamber of Commerce</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" alt="The world logo" />
+      <h1>
+        Grove City <br />
+        Chamber of Commerce
+      </h1>
+      <span id="header-date"></span>
+
+      <nav>
+        <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Products</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hicta">
+        <h2>Hero with site name and call to action</h2>
+      </div>
+      <div class="event"><h2>Event</h2></div>
+      <div class="weather"><h2>Weather</h2></div>
+      <div class="news"><h2>News</h2></div>
+      <div class="join"><h2>Join</h2></div>
+      <div class="spotlight">
+        <div class="s1"><h2>Spotlight 1</h2></div>
+        <div class="s2"><h2>Spotlight 2</h2></div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="top">
+        <img
+          class="footer-image"
+          src="images/logo.png"
+          alt="Grove City Chamber of Commerce Logo"
+        />
+        <div class="info">
+          <h2>Grove City Chamber of Commerce</h2>
+          <p>10 Main St</p>
+          <p>Grove City, OH 44011</p>
+        </div>
+
+        <div class="conact-map">
+          <p>info@grovecitycc.org</p>
+          <p>(555) 123-1234</p>
+          <a
+            href="https://www.google.com/maps
+        "
+            target="_blank"
+            ><img src="images/map-icon-white-19.jpg" alt="map maker icon" />
+            <p>Map Location</p></a
+          >
+        </div>
+      </section>
+
+      <section class="bottom">
+        <p>
+          &copy; <span id="currentdate"> </span> Grove City Chamber of Commerce
+        </p>
+        <p>Jonathan Cross</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="modified"></span></p>
+      </section>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+@media only screen and (min-width: 786px) {
+  header {
+    grid-template-columns: 30% 1fr 200px;
+  }
+
+  main {
+    background-color: #c1c6ba;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 100px 1fr;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .hicta {
+    grid-area: 1 / 1 / 2 / 4;
+  }
+
+  .event {
+    grid-area: 5 / 1 / 6 / 3;
+  }
+
+  .weather {
+    grid-area: 5 / 3 / 6 / 4;
+  }
+
+  .news {
+    grid-area: 2 / 1 / 3 / 4;
+  }
+
+  .join {
+    grid-area: 4 / 1 / 5 / 4;
+  }
+
+  .spotlight {
+    grid-area: 3 / 1 / 4 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40px;
+    line-height: 2rem;
+  }
+
+  .top {
+    display: flex;
+    justify-content: ce;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .top img {
+    max-width: 25%;
+    margin-right: 20px;
+  }
+
+  .bottom {
+    display: flex;
+    grid-area: 2 / 1 / 3 / 3;
+    justify-content: center;
+  }
+
+  .bottom p + p::before {
+    content: " | ";
+    white-space: pre;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+}
