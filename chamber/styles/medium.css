@@ -3,6 +3,10 @@
     grid-template-columns: 30% 1fr 200px;
   }
 
+  .social img {
+    max-width: 3%;
+  }
+
   main {
     background-color: #c1c6ba;
     display: grid;

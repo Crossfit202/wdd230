@@ -1,12 +1,12 @@
 @media only screen and (min-width: 1024px) {
   header {
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 1fr 70px 30px;
+    grid-template-rows: 1fr 40px 60px;
   }
 
   header img {
-    max-width: 100%;
-    padding: 10px;
+    max-width: 90%;
+    padding: 20px;
     grid-area: 1 / 1 / 2 / 2;
   }
 
@@ -20,14 +20,19 @@
     font-size: 2rem;
   }
 
+  .social img {
+    max-width: 2%;
+    background-color: #2a571d;
+  }
+
   nav {
     background-color: #2a571d;
     width: 100%;
     grid-area: 3 / 1 / 4 / 3;
     height: 100%;
-    padding: 0;
+    padding: 5px;
     margin: 0;
-    font-size: 1.5em;
+    font-size: 3rem;
   }
 
   nav button {
@@ -42,6 +47,10 @@
   nav button {
     display: none;
     padding: 0;
+  }
+
+  nav ul li a {
+    border-top: none;
   }
 
   nav ul li a:hover {
