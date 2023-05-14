@@ -95,7 +95,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  margin: 0, 2vw;
+  margin: 0 2vw;
   text-decoration: none;
   color: white;
   border-top: 1px solid rgba(0, 0, 0, 0.5);
@@ -167,7 +167,6 @@ footer h2 {
 footer img {
   max-width: 30%;
   background-color: white;
-  padding: 5;
 }
 
 footer a img {
