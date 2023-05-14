@@ -138,10 +138,6 @@ main {
   gap: 10px;
 }
 
-main h2 {
-  color: #6e9c2f;
-}
-
 main div {
   margin: 0;
   text-align: center;
@@ -179,4 +175,11 @@ footer a p {
 
 .bottom {
   border-top: 2px solid white;
+}
+
+main h2 {
+  color: #689922;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 3vw;
+  margin: 10px;
 }
