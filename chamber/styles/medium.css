@@ -37,6 +37,7 @@
   }
 
   .join {
+    display: block;
     grid-area: 4 / 1 / 5 / 4;
   }
 
