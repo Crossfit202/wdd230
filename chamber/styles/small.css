@@ -36,11 +36,6 @@ header {
   background-color: #2a571d;
   color: #fff;
 }
-
-header h1 {
-  font-size: 5vw;
-}
-
 .social img {
   background-color: #6e9c2f;
   max-width: 5%;
@@ -55,7 +50,7 @@ header img {
 }
 
 header h1 {
-  font-size: 3vw;
+  font-size: 8vw;
   padding: 10px;
 }
 
@@ -180,6 +175,6 @@ footer a p {
 main h2 {
   color: #384c20;
   text-shadow: 1px 1px 0 #000;
-  font-size: 2vw;
+  font-size: 5vw;
   margin: 10px;
 }
