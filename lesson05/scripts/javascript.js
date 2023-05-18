@@ -13,7 +13,7 @@ button.addEventListener("click", () => {
   listItem.appendChild(listText);
   listText.textContent = myItem;
   listItem.appendChild(listButton);
-  listButton.textContent = "Delete";
+  listButton.textContent = "❌";
   list.appendChild(listItem);
 
   listButton.addEventListener("click", () => {
