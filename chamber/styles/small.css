@@ -137,12 +137,12 @@ main div {
   margin: 0;
   text-align: center;
   background-color: #fff;
-  border: 1px solid #6e9c2f;
+  border: 1px solid #cbe5a7;
 }
 
 .spotlight {
   gap: 10px;
-  background-color: #c1c6ba;
+  background-color: hwb(86 60% 23%);
 }
 
 .s3 {
