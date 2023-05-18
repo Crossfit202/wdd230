@@ -44,6 +44,6 @@ const month = months[date.getMonth()];
 const dayOfMonth = date.getDate();
 const year = date.getFullYear();
 
-const formattedDate = `${dayOfWeek}, ${month} ${dayOfMonth}, ${year}`;
+const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month}, ${year}`;
 
 document.getElementById("header-date").textContent = formattedDate;

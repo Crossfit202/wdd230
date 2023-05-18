@@ -140,6 +140,15 @@ main div {
   border: 1px solid #6e9c2f;
 }
 
+.spotlight {
+  gap: 10px;
+  background-color: #c1c6ba;
+}
+
+.s3 {
+  display: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;

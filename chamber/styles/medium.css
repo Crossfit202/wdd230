@@ -3,6 +3,10 @@
     grid-template-columns: 30% 1fr 200px;
   }
 
+  #header-date {
+    font-size: 2rem;
+  }
+
   .social img {
     max-width: 3%;
   }
