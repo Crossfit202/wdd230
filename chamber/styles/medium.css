@@ -7,6 +7,10 @@
     font-size: 2rem;
   }
 
+  .banner {
+    font-size: 3vw;
+  }
+
   .social img {
     max-width: 3%;
   }
@@ -14,37 +18,72 @@
   main {
     background-color: #c1c6ba;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 100px 1fr;
     padding: 20px;
     height: 100%;
+    overflow: hidden;
   }
 
+  main h2 {
+    font-size: 2em;
+  }
+
+  .call-to-action {
+    font-size: 2em;
+    margin: 10px;
+    max-height: 80px;
+  }
   .hicta {
     grid-area: 1 / 1 / 2 / 4;
   }
 
   .event {
     grid-area: 5 / 1 / 6 / 3;
+    overflow: hidden;
+    font-size: 1.5em;
+  }
+
+  .event p {
+    padding: 10px;
   }
 
   .weather {
     grid-area: 5 / 3 / 6 / 4;
+    justify-self: center;
+    height: 80%;
   }
 
   .news {
     grid-area: 2 / 1 / 3 / 4;
   }
 
+  .news p {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
   .join {
     display: block;
     grid-area: 4 / 1 / 5 / 4;
+    font-size: 2em;
+    height: 60px;
+  }
+
+  .join-button {
+    background-color: #6e9c2f;
+    color: white;
+    width: 90%;
+    margin: 10px;
+    border: none;
   }
 
   .spotlight {
     grid-area: 3 / 1 / 4 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .spotlight img {
+    width: 25%;
   }
 
   footer {
