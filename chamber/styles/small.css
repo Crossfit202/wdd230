@@ -17,12 +17,24 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+.banner {
+  font-size: 4vw;
+  text-align: center;
+  background-color: #cbe5a7;
+  padding: 10px;
+  color: #2a571d;
+}
+
 h1 {
   font-family: "Old Standard TT", sans-serif;
 }
 
 main h2 {
   font-family: "Old Standard TT", sans-serif;
+  color: white;
+  text-shadow: 1px 1px 0 #000;
+  font-size: 5vw;
+  margin: 10px;
 }
 
 header {
@@ -47,11 +59,13 @@ header {
 header img {
   max-width: 100%;
   padding: 10px;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 header h1 {
   font-size: 8vw;
   padding: 10px;
+  grid-area: 1 / 2 / 2 / 3;
 }
 
 #header-date {
@@ -125,24 +139,79 @@ nav ul.open {
 }
 
 main {
+  padding: 10px;
   background-color: #c1c6ba;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
-  padding: 20px;
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 main div {
   margin: 0;
   text-align: center;
-  background-color: #fff;
+  background-color: #2a571d;
   border: 1px solid #cbe5a7;
+  margin: 5px;
+}
+
+.hicta {
+  background-image: url("../images/neighborhood.jpg");
+  background-position: center top, left bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, 200px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hicta h2 {
+  color: #2a571d;
+}
+
+main a {
+  text-decoration: none;
+  color: white;
+}
+
+.weather {
+  width: 75%;
+  align-self: center;
+}
+
+.event p {
+  color: white;
+}
+.weather p {
+  color: white;
+}
+
+.weather img {
+  width: 25%;
+}
+
+.call-to-action {
+  background-color: #2a571d;
+  border: none;
+  max-width: 300px;
+  max-height: 40px;
+  font-size: 1.5em;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px #6e9c2f;
+  margin-bottom: 20px;
 }
 
 .spotlight {
   gap: 10px;
   background-color: hwb(86 60% 23%);
+}
+
+.spotlight img {
+  width: 50%;
+}
+
+.spotlight p {
+  color: white;
+  font-size: 1.5em;
 }
 
 .s3 {
@@ -151,6 +220,16 @@ main div {
 
 .join {
   display: none;
+}
+
+.news p {
+  color: white;
+  font-size: 1.2em;
+  padding: 5px;
+  max-height: 100%;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
 }
 
 footer {
@@ -183,11 +262,4 @@ footer a p {
 
 .bottom {
   border-top: 2px solid white;
-}
-
-main h2 {
-  color: #384c20;
-  text-shadow: 1px 1px 0 #000;
-  font-size: 5vw;
-  margin: 10px;
 }

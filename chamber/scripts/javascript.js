@@ -47,3 +47,20 @@ const year = date.getFullYear();
 const formattedDate = `${dayOfWeek}, ${dayOfMonth} ${month}, ${year}`;
 
 document.getElementById("header-date").textContent = formattedDate;
+
+var currentDay = new Date().getDay();
+
+// Check if it's Monday (1) or Tuesday (2)
+if (currentDay === 1 || currentDay === 2) {
+  // Create the banner element
+  var banner = document.createElement("div");
+  banner.className = "banner";
+  banner.textContent =
+    "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+
+  // Add the banner to the top of the page
+  document.body.insertBefore(banner, document.body.firstChild);
+}
+
+var contentDiv = document.getElementById("event");
+var moreInfoButton = document.getElementById("moreInfoButton");
