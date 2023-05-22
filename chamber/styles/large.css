@@ -69,19 +69,31 @@
 
   .hicta {
     grid-area: 1 / 2 / 3 / 3;
+    height: auto;
   }
 
   .hicta h2 {
-    margin-top: 80px;
+    margin-top: 30px;
+    font-size: 3em;
+  }
+
+  .call-to-action {
+    font-size: 2em;
   }
 
   .event {
     grid-area: 1 / 1 / 2 / 2;
+    font-size: 1.5em;
+  }
+
+  .join-button {
+    margin-top: 75px;
   }
 
   .weather {
-    grid-area: 2 / 1 / 3 / 2;
-    height: 70%;
+    grid-area: 2 / 1 / 4 / 2;
+    height: 300px;
+    margin-bottom: 300px;
   }
 
   .news {
@@ -108,15 +120,20 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    margin: 0;
+    margin: 5px;
+    justify-content: center;
   }
 
   .spotlight div {
-    height: 33%;
+    height: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .spotlight img {
-    max-height: 40%;
+    max-width: 38%;
   }
 
   footer {

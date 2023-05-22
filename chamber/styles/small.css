@@ -23,6 +23,7 @@ html {
   background-color: #cbe5a7;
   padding: 10px;
   color: #2a571d;
+  font-family: "Old Standard TT", sans-serif;
 }
 
 h1 {
@@ -143,6 +144,7 @@ main {
   background-color: #c1c6ba;
   display: flex;
   flex-direction: column;
+  font-family: "Abril Fatface" sans-serif;
 }
 
 main div {
@@ -168,19 +170,43 @@ main div {
   color: #2a571d;
 }
 
+.hicta {
+  height: 180px;
+}
+
 main a {
   text-decoration: none;
   color: white;
 }
 
 .weather {
-  width: 75%;
+  width: 70%;
   align-self: center;
+  justify-self: center;
+  background-color: #6e9c2f;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.event p {
+.event-text {
   color: white;
+  font-size: 1em;
+  padding: 10px;
 }
+
+.event-text a {
+  color: white;
+  text-decoration: underline;
+}
+
+.event {
+  overflow-y: scroll;
+  height: 250px;
+}
+
 .weather p {
   color: white;
 }
@@ -190,13 +216,13 @@ main a {
 }
 
 .call-to-action {
-  background-color: #2a571d;
+  background-color: #6e9c2f;
   border: none;
   max-width: 300px;
   max-height: 40px;
   font-size: 1.5em;
   border-radius: 15px;
-  box-shadow: 4px 4px 10px #6e9c2f;
+  box-shadow: 4px 4px 10px #2a571d;
   margin-bottom: 20px;
 }
 
@@ -205,13 +231,35 @@ main a {
   background-color: hwb(86 60% 23%);
 }
 
+.spotlight div {
+  background-image: url(http://via.placeholder.com/640x360);
+  background-position: center top, left bottom;
+  background-repeat: no-repeat, repeat;
+  background-size: cover, 200px 150px;
+}
+
 .spotlight img {
-  width: 50%;
+  width: 90%;
+}
+
+.spotlight a {
+  color: #6e9c2f;
+  text-decoration: underline;
+  font-family: "Abril Fatface";
 }
 
 .spotlight p {
-  color: white;
+  color: #2a571d;
   font-size: 1.5em;
+  text-shadow: 1px 1px 1px black;
+}
+
+.spotlight h2 {
+  color: #2a571d;
+  padding: 5px;
+  width: 100%;
+  font-family: "Abril Fatface";
+  text-shadow: 2px 2px 2px white;
 }
 
 .s3 {
@@ -224,12 +272,13 @@ main a {
 
 .news p {
   color: white;
-  font-size: 1.2em;
-  padding: 5px;
+  font-size: 1.5em;
+  padding: 10px;
   max-height: 100%;
   overflow: hidden;
   text-align: center;
   justify-content: center;
+  margin: 0, auto;
 }
 
 footer {
