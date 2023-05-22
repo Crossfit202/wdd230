@@ -66,20 +66,21 @@
   }
 
   .join {
-    display: block;
+    display: flex;
     grid-area: 4 / 1 / 5 / 4;
     font-size: 2em;
     height: 60px;
+    align-items: center;
+    justify-content: center;
   }
 
   .join-button {
     background-color: #6e9c2f;
     color: white;
-    width: 90%;
-    margin: 10px;
     border: none;
     border-radius: 15px;
     box-shadow: 2px 2px 6px white;
+    width: 75%;
   }
 
   .spotlight {
