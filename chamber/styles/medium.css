@@ -1,4 +1,4 @@
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
   header {
     grid-template-columns: 30% 1fr 200px;
   }
@@ -18,9 +18,10 @@
   main {
     background-color: #c1c6ba;
     display: grid;
-    padding: 20px;
     height: 100%;
-    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 15% 1fr;
+    gap: 10px;
   }
 
   main h2 {
@@ -28,20 +29,21 @@
   }
 
   .call-to-action {
-    font-size: 2em;
+    font-size: 1.5rem;
     margin: 10px;
+    padding: 5px;
     max-height: 80px;
   }
   .hicta {
-    grid-area: 1 / 1 / 2 / 4;
-    height: 200px;
+    grid-area: 1 / 1 / 2 / 3;
+    height: 100%;
   }
 
   .event {
-    grid-area: 5 / 1 / 6 / 3;
+    grid-area: 5 / 1 / 6 / 2;
     overflow-y: scroll;
     font-size: 1.2em;
-    height: auto;
+    height: 100%;
   }
 
   .event p {
@@ -49,15 +51,14 @@
   }
 
   .weather {
-    grid-area: 5 / 3 / 6 / 4;
+    grid-area: 5 / 2 / 6 / 3;
     justify-self: center;
     height: auto;
     width: auto;
   }
 
   .news {
-    grid-area: 2 / 1 / 3 / 4;
-    height: auto;
+    grid-area: 2 / 1 / 3 / 3;
   }
 
   .news p {
@@ -67,11 +68,16 @@
 
   .join {
     display: flex;
-    grid-area: 4 / 1 / 5 / 4;
-    font-size: 2em;
-    height: 60px;
+    grid-area: 4 / 1 / 5 / 3;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .join p {
+    color: white;
+    font-size: 1.5rem;
   }
 
   .join-button {
@@ -81,10 +87,11 @@
     border-radius: 15px;
     box-shadow: 2px 2px 6px white;
     width: 75%;
+    font-size: 2rem;
   }
 
   .spotlight {
-    grid-area: 3 / 1 / 4 / 4;
+    grid-area: 3 / 1 / 4 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
