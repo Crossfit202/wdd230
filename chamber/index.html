@@ -58,7 +58,7 @@
         <h2>Welcome to Grove City</h2>
         <a href="#" class="call-to-action">Join the Chamber</a>
       </div>
-      <div class="event" id="event">
+      <div class="event">
         <h2>Business Mixer</h2>
         <p class="event-text">
           Join us for an exclusive Business Networking Mixer, where local
@@ -94,9 +94,13 @@
         </p>
       </div>
       <div class="weather">
-        <img src="images/weather.png" alt="" />
-        <p>Wind Speed: 14mph</p>
-        <p>Wind Chill: N/A</p>
+        <div class="icon-temperature">
+          <img src="images/weather.png" alt="Weather icon" />
+          <p><span class="temperature">50</span>°F</p>
+        </div>
+
+        <p>Wind Speed: <span class="windSpeed">10</span>mph</p>
+        <p>Wind Chill: <span class="windChill"></span></p>
       </div>
       <div class="news">
         <h2>News</h2>
@@ -167,5 +171,6 @@
       </section>
     </footer>
     <script src="scripts/javascript.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>

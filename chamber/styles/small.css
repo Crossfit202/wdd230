@@ -178,11 +178,37 @@ main a {
   align-self: center;
   justify-self: center;
   background-color: #6e9c2f;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: start;
+  font-size: 1.3rem;
+}
+
+.icon-temperature {
+  display: flex;
+  background-color: #6e9c2f;
+  border: none;
   align-items: center;
+  justify-content: center;
+}
+
+.icon-temperature div {
+  background-color: #6e9c2f;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather p {
+  align-self: center;
+  color: white;
+  margin: 3px;
+}
+
+.weather img {
+  width: 50%;
 }
 
 .event-text {
@@ -201,20 +227,13 @@ main a {
   height: 250px;
 }
 
-.weather p {
-  color: white;
-}
-
-.weather img {
-  width: 25%;
-}
-
 .call-to-action {
   background-color: #6e9c2f;
   border: none;
   max-width: 300px;
   max-height: 40px;
-  font-size: 1.5em;
+  padding: 5px;
+  font-size: 1.5rem;
   border-radius: 15px;
   box-shadow: 4px 4px 10px #2a571d;
   margin-bottom: 20px;
@@ -231,11 +250,6 @@ main a {
   background-repeat: no-repeat, repeat;
   background-size: cover, 200px 150px;
 }
-
-.spotlight img {
-  width: 90%;
-}
-
 .spotlight a {
   color: #6e9c2f;
   text-decoration: underline;
@@ -271,7 +285,6 @@ main a {
   color: white;
   font-size: 1.2rem;
   padding: 10px;
-  max-height: 100%;
   overflow: hidden;
   text-align: center;
   justify-content: center;
