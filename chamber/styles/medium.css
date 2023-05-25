@@ -19,7 +19,7 @@
     background-color: #c1c6ba;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 1fr 1fr 15% 1fr;
+    grid-template-rows: 1fr 200px 200px 15% 1fr;
     gap: 5px;
   }
 
@@ -40,7 +40,6 @@
   .event {
     grid-area: 5 / 1 / 6 / 2;
     font-size: 1.2em;
-    height: 250px;
   }
   .weather {
     grid-area: 5 / 2 / 6 / 3;
