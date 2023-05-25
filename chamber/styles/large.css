@@ -84,7 +84,7 @@
 
   .event {
     grid-area: 1 / 1 / 2 / 2;
-    font-size: 1rem;
+    font-size: 1.5rem;
     height: 98%;
   }
 
@@ -95,10 +95,7 @@
   .news {
     grid-area: 3 / 2 / 4 / 3;
     height: 100%;
-  }
-
-  .news p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .join {
