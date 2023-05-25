@@ -35,12 +35,10 @@
   }
   .hicta {
     grid-area: 1 / 1 / 2 / 3;
-    height: 100%;
   }
 
   .event {
     grid-area: 5 / 1 / 6 / 2;
-    overflow-y: scroll;
     font-size: 1.2em;
     height: 250px;
   }

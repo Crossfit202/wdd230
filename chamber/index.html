@@ -26,7 +26,7 @@
 
   <body>
     <header>
-      <img src="images/logo.png" alt="The world logo" />
+      <img src="images/logo.webp" alt="The world logo" />
       <h1>
         Grove City <br />
         Chamber of Commerce
@@ -55,43 +55,41 @@
 
     <main>
       <div class="hicta">
-        <h2>Welcome to Grove City</h2>
-        <a href="#" class="call-to-action">Join the Chamber</a>
+        <picture>
+          <source
+            srcset="images/thisWeekBackground768.jpg"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/thisWeekBackground1024.jpg"
+            media="(min-width: 1024px)"
+          />
+          <img src="images/thisWeekBackground500.jpg" alt="" />
+        </picture>
+        <!--<h2>Welcome to Grove City</h2>-->
+        <!--<a href="#" class="call-to-action">Join the Chamber</a>-->
       </div>
       <div class="event">
         <h2>Business Mixer</h2>
         <p class="event-text">
           Join us for an exclusive Business Networking Mixer, where local
           entrepreneurs, professionals, and business owners come together to
-          build connections and explore new opportunities. This event provides a
-          platform for networking, sharing ideas, and fostering collaborations
-          within our vibrant business community. Whether you're a seasoned
-          business owner or just starting out, this event offers a valuable
-          opportunity to expand your network and meet like-minded individuals in
-          a relaxed and welcoming atmosphere. Highlights of the event: Engage in
-          meaningful conversations with influential figures in the local
-          business community. Discover potential partnerships, collaborations,
-          and business prospects. Enjoy delicious appetizers and refreshments
-          while networking. Participate in interactive activities designed to
-          facilitate connections. Exchange business cards and expand your
-          contact list. Gain insights from guest speakers who will share their
-          expertise on relevant business topics. Raffle prizes and giveaways for
-          attendees.
+          build connections and explore new opportunities.
         </p>
 
-        <ul class="event-text">
-          <li>Date: May 26th, 2023</li>
-          <li>Location: Gantz Park</li>
-          <li>
-            Registration: Register Online Today! | <a href="#">Register Now</a>
-          </li>
-        </ul>
-        <p class="event-text">
-          Don't miss out on this fantastic opportunity to connect, collaborate,
-          and grow your business network. Join us at the Business Networking
-          Mixer and unlock new possibilities for success in your entrepreneurial
-          journey.
-        </p>
+        <!--<ul class="event-text">-->
+        <!--  <li>Date: May 26th, 2023</li>-->
+        <!--  <li>Location: Gantz Park</li>-->
+        <!--  <li>-->
+        <!--    Registration: Register Online Today! | <a href="#">Register Now</a>-->
+        <!--  </li>-->
+        <!--</ul>-->
+        <!--<p class="event-text">-->
+        <!--  Don't miss out on this fantastic opportunity to connect, collaborate,-->
+        <!--  and grow your business network. Join us at the Business Networking-->
+        <!--  Mixer and unlock new possibilities for success in your entrepreneurial-->
+        <!--  journey.-->
+        <!--</p>-->
       </div>
       <div class="weather">
         <div class="icon-temperature">
@@ -137,7 +135,7 @@
       <section class="top">
         <img
           class="footer-image"
-          src="images/logo.png"
+          src="images/logo.webp"
           alt="Grove City Chamber of Commerce Logo"
         />
         <div class="info">
