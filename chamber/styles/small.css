@@ -207,6 +207,10 @@ main a {
   margin: 3px;
 }
 
+.icon-temperature span {
+  font-size: 3rem;
+}
+
 .weather img {
   width: 50%;
 }
