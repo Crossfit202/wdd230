@@ -237,7 +237,7 @@ main a {
   background-color: hwb(86 60% 23%);
 }
 .spotlight a {
-  color: #6e9c2f;
+  color: blue;
   text-decoration: underline;
   font-family: "Abril Fatface";
 }
