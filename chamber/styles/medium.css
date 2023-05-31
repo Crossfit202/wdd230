@@ -70,13 +70,13 @@
   }
 
   .join-button {
-    background-color: #6e9c2f;
-    color: blue;
+    background-color: white;
+    color: #2a571d;
     border: none;
     border-radius: 15px;
-    box-shadow: 2px 2px 6px white;
+    box-shadow: 2px 2px 6px #c1c6ba;
     width: 75%;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .spotlight {
