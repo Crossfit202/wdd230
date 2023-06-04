@@ -45,15 +45,134 @@
 
         <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
         <ul id="primaryNav">
-          <li><a href="#">Home</a></li>
-          <li class="active"><a href="#">Products</a></li>
+          <li><a href="http://127.0.0.1:5501/chamber/index.html">Home</a></li>
+          <li class="active">
+            <a href="http://127.0.0.1:5501/chamber/discover.html">Discover</a>
+          </li>
           <li><a href="#">Location</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main class="discover-main">
+      <h2 class="discover-heading">Discover Grove City!</h2>
+      <div class="demographics">
+        <h3>Population</h3>
+        <p>As of June 3rd 2023, our wonderful community is 42,714 strong</p>
+        <h3>Econimic Impact</h3>
+        <p>
+          From 2019 to 2020, employment in Grove City, OH grew at a rate of
+          4.05%, from 21.4k employees to 22.3k employees. The most common job
+          groups, by number of people living in Grove City, OH, are Office &
+          Administrative Support Occupations (3,691 people), Management
+          Occupations (2,636 people), and Sales & Related Occupations (2,086
+          people). This chart illustrates the share breakdown of the primary
+          jobs held by residents of Grove City, OH.
+        </p>
+      </div>
+
+      <div class="image_container">
+        <h2>Image Gallery</h2>
+        <picture>
+          <source
+            srcset="images/Grove_City_Library_768.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/Grove_City_Library_1024.webp"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="images/Grove_City_Library_500.webp"
+            alt="Picture of the Grove City Public Library"
+            loading="lazy"
+          />
+        </picture>
+        <figcaption>
+          Visit the public library for endless fun with the Summer Reading
+          Program!
+        </figcaption>
+
+        <picture>
+          <source
+            srcset="images/Gantz_Park768.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/Gantz_Park1024.webp"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="images/Gantz_Park500.webp"
+            alt="Picture of Gantz Park Playground"
+            loading="lazy"
+          />
+        </picture>
+        <figcaption>
+          The newly renovated Gantz park is one of many parks that Grove City
+          has to offer!
+        </figcaption>
+
+        <picture>
+          <source
+            srcset="images/Big_Splash768.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/Big_Splash1024.webp"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="images/Big_Splash500.webp"
+            alt="Picture of the Big Splash Water Park"
+            loading="lazy"
+          />
+        </picture>
+        <figcaption>
+          Visit the Big Splash with the family to cool off on a hot day!
+        </figcaption>
+
+        <picture>
+          <source
+            srcset="images/Pickleball768.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/Pickleball1024.webp"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="images/Pickleball500.webp"
+            alt="Picture of people playing on Pickleball courts"
+            loading="lazy"
+          />
+        </picture>
+        <figcaption>
+          The Pickleball courts are always open and ready!
+        </figcaption>
+
+        <picture>
+          <source
+            srcset="images/concert768.webp"
+            media="(min-width: 768px) and (max-width: 1024px)"
+          />
+          <source
+            srcset="images/concert1024.webp"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="images/concert500.webp"
+            alt="Picture of people gathered downtown for a concert and community event"
+            loading="lazy"
+          />
+        </picture>
+        <figcaption>
+          There are many concerts and events that happen downtown during the
+          summer for all kinds of fun!
+        </figcaption>
+      </div>
+    </main>
 
     <footer>
       <section class="top">

@@ -127,6 +127,18 @@
     max-width: 38%;
   }
 
+  .image_container img {
+    padding: 15px;
+    width: 80%;
+    background-color: #6e9c2f;
+  }
+
+  .image_container {
+    max-width: 85%;
+    justify-self: center;
+    align-self: center;
+  }
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
