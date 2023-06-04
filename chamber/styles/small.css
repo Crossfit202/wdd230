@@ -160,10 +160,13 @@ main div {
   margin: 5px;
 }
 
-.hicta img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hicta {
+  background-image: ("images/neighborhood500.webp"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .hicta h2 {
