@@ -76,7 +76,6 @@ header h1 {
 #header-date {
   background-color: #c1c6ba;
   color: #2a571d;
-  text-shadow: 2px white;
   grid-area: 2 / 1 / 3 / 4;
   padding: 0.5rem;
   font-size: 2rem;
