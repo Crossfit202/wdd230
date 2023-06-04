@@ -295,7 +295,7 @@ main a {
   background-color: #6e9c2f;
 }
 
-figcaption {
+.caption {
   color: white;
   padding: 10px;
   margin: 10px;
