@@ -27,6 +27,11 @@
     font-size: 2em;
   }
 
+  .image_container img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
   .call-to-action {
     font-size: 2.5rem;
     margin: 10px;

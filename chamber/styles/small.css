@@ -249,6 +249,15 @@ main a {
   margin: 10px;
 }
 
+#timeDifference {
+  background-color: #cbe5a7;
+  color: #2a571d;
+  text-shadow: 2px 2px 2px white;
+  font-size: 2.5em;
+  padding: 10px;
+  margin: 20px;
+}
+
 .spotlight div {
   background-color: white;
 }
@@ -316,6 +325,7 @@ main a {
   width: 100%;
   text-align: center;
   font-size: 2.5em;
+  padding: 10px;
 }
 
 .demographics {

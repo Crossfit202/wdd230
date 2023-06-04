@@ -64,3 +64,18 @@ if (currentDay === 1 || currentDay === 2) {
 
 var contentDiv = document.getElementById("event");
 var moreInfoButton = document.getElementById("moreInfoButton");
+
+var lastVisit = localStorage.getItem("lastVisit");
+
+var currentVisit = new Date().getTime();
+
+localStorage.setItem("lastVisit", currentVisit);
+
+if (lastVisit) {
+  var timeDifference = currentVisit - parseInt(lastVisit);
+  var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+} else {
+}
+
+document.getElementById("timeDifference").textContent =
+  "Welcome Back! Days since last visit: " + daysDifference;
