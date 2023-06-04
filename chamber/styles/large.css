@@ -80,7 +80,8 @@
   }
 
   .call-to-action {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
+    max-height: 150px;
   }
 
   .event {

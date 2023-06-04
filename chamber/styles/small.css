@@ -167,10 +167,12 @@ main div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hicta h2 {
   color: #2a571d;
+  font-size: 2.5em;
 }
 
 main a {
@@ -233,14 +235,18 @@ main a {
 
 .call-to-action {
   background-color: #6e9c2f;
+  color: white;
   border: none;
   max-width: 300px;
-  max-height: 40px;
+  max-height: 55px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 15px;
   box-shadow: 4px 4px 10px #2a571d;
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
 }
 
 .spotlight div {
