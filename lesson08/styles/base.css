@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: purple;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgb(225, 197, 225);
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(210, 153, 210);
+  }
