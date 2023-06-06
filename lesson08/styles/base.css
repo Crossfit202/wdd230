@@ -41,3 +41,9 @@ tr:nth-child(odd) {
 .plan {
   font-size: 3vw;
 }
+
+caption {
+  font-size: 2vw;
+  text-align: center;
+  caption-side: bottom;
+}
