@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -161,7 +160,7 @@ main div {
 }
 
 .hicta {
-  background-image: url("/chamber/images/neighborhood500.webp");
+  background-image: url("/images/neighborhood500.webp");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -337,6 +336,82 @@ main a {
 
 .image_container h2 {
   font-size: 2.5rem;
+}
+
+.join-main {
+  background-color: white;
+}
+
+form label {
+  display: block;
+  padding-top: 20px;
+  color: #6e9c2f;
+  font-size: 1.5rem;
+}
+
+form label input,
+form label select {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #6e9c2f;
+  border-radius: 10px;
+  height: 44px;
+  width: 100%;
+  color: #2a571d;
+  max-width: 25rem;
+}
+
+form textarea {
+  display: block;
+  height: 150px;
+  color: #2a571d;
+}
+
+.submitBtn {
+  border: none;
+  background-color: #2a571d;
+  color: white;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 15px;
+  max-width: 20rem;
+  font-size: 1.5rem;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: #6e9c2f;
+}
+
+form label input:required {
+  border: red solid 2px;
+}
+
+form label input:required:valid {
+  border: #2a571d solid 2px;
+}
+
+.join-div {
+  display: none;
+}
+
+.details {
+  display: none;
+}
+
+.thankyou-main {
+  background-color: white;
+  text-align: center;
+}
+
+.thankyou-main h2 {
+  color: #2a571d;
+  font-size: 3rem;
+}
+
+.thankyou-main p {
+  font-size: 1.7rem;
+  color: #2a571d;
 }
 
 footer {

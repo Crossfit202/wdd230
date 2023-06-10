@@ -1,78 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Membership Form</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site plan for Chamber of Commerce site for Jonathan Cross in WDD 230: Web Frontend Development at BYU - Idaho"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Old+Standard+TT:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Grove City Chamber of Commerce</title>
   </head>
-  <body>
-    <form method="get" action="thankyou.html">
-      <label for="first-name">First Name:</label>
-      <input type="text" id="fname" name="fname" required />
 
-      <label for="last-name"
-        >Last Name: <input type="text" id="lname" name="lname" required
-      /></label>
+    <header>
+      <img src="images/logo.webp" alt="The world logo" />
+      <h1>
+        Grove City <br />
+        Chamber of Commerce
+      </h1>
+      <span id="header-date"></span>
 
-      <label for="position"
-        >Business Position Title:
-        <input
-          type="text"
-          id="position"
-          name="position"
-          pattern="[A-Za-z\s\-]{7,}"
-          title="Please enter at least 7 characters using only letters, hyphens, and spaces."
-      /></label>
+      <nav>
+        <div class="social">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img src="images/facebook.png" alt="Facebook logo"
+          /></a>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><img src="images/linkedin.png" alt="Linkedin logo"
+          /></a>
+        </div>
 
-      <label for="email"
-        >Email:
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="example@example.com"
-      /></label>
+        <button id="hamburgerButton"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+          <li><a href="https://crossfit202.github.io/wdd230/chamber/index.html">Home</a></li>
+          <li class="active">
+            <a href="https://crossfit202.github.io/wdd230/chamber/discover.html">Discover</a>
+          </li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <label for="cell-phone"
-        >Cell Phone Number:
-        <input type="tel" id="cell-phone" name="cell_phone" required
-      /></label>
+    <main class="join-main">
 
-      <label for="business-name"
-        >Business Name/Title:
-        <input type="text" id="business-name" name="business_name" required
-      /></label>
+  
+      <form method="get" action="thankyou.html">
 
-      <label for="membership-level">Membership Level:</label>
-      <select id="membership-level" name="membership_level">
-        <option value="np">NP Membership</option>
-        <option value="bronze">Bronze Membership</option>
-        <option value="silver">Silver Membership</option>
-        <option value="gold">Gold Membership</option>
-      </select>
+        <label for="fname">First Name:
+        <input type="text" id="fname" name="fname" required /></label>
 
-      <p>Membership Level Benefits:</p>
-      <ul>
-        <li>NP Membership: No fee</li>
-        <li>Bronze Membership: Basic benefits</li>
-        <li>Silver Membership: Enhanced benefits</li>
-        <li>Gold Membership: Premium benefits</li>
-      </ul>
+        <label for="lname"
+          >Last Name: <input type="text" id="lname" name="lname" required
+        /></label>
 
-      <label for="business-description"
-        >Business Description:
-        <textarea
-          id="business-description"
-          name="business_description"
-        ></textarea>
-      </label>
+        <label for="position"
+          >Business Position/Title
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[A-Za-z\s\-]{7,}"
+            title="Please enter at least 7 characters using only letters, hyphens, and spaces."
+        /></label>
 
-      <input
-        type="hidden"
-        name="form_load_time"
-        value="<?= date('Y-m-d H:i:s') ?>"
-      />
+        <label for="email"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="example@example.com"
+        /></label>
 
-      <input type="submit" value="Submit" />
-    </form>
+        <label for="cell-phone"
+          >Cell Phone Number:
+          <input type="tel" id="cell-phone" name="cell_phone" required
+        /></label>
+
+        <label for="business-name"
+          >Business Name:
+          <input type="text" id="business-name" name="business_name" required
+        /></label>
+
+        <label for="membership-level"
+          >Membership Level: <br>
+          <h3 class="details">&lt;&#45;&#45;&#45;&#45; See detailed mebership benefits </h3>
+          <select id="membership-level" name="membership_level">
+            <option value="select">Please Select Membership</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select></label
+        >
+
+        <label for="business-description"
+          >Business Description:
+          <textarea
+            id="business-description"
+            name="business_description"
+          ></textarea>
+        </label>
+
+        <input type="hidden" name="time" value="<?= date('Y-m-d H:i:s') ?>" />
+
+        <input class="submitBtn" type="submit" value="Join My Community!"/>
+      </form>
+      
+
+        <div class="join-div">
+          <h2>Membership Benefits</h2>
+        
+          <div class="membership-item">
+            <h3><a href="#np-membership">NP Membership (Non-Profit Organization) &blacktriangledown;</a></h3>
+            <div class="membership-details" id="np-membership">
+              <ul>
+                <li>Free membership - <span>No Fees!</span></li>
+                <li>Access to networking events and business forums.</li>
+                <li>Inclusion in the Chamber's online directory.</li>
+                <li>Opportunities to collaborate with other non-profit organizations.</li>
+                <li>Listing of events and fundraisers in the Chamber's newsletter.</li>
+                <li>Access to educational resources and training materials.</li>
+              </ul>
+              <a href="#" class="close-link">Close</a>
+            </div>
+          </div>
+
+          <div class="membership-item">
+            <h3><a href="#bronze-membership">Bronze Membership &blacktriangledown;</a></h3>
+            <div class="membership-details" id="bronze-membership">
+              <ul>
+                <li>Basic membership package - <span>$100</span></li>
+                <li>All benefits of NP Membership.</li>
+                <li>Opportunity to attend Chamber networking events and workshops.</li>
+                <li>Listing in the Chamber's online directory with an enhanced profile.</li>
+                <li>Access to member-exclusive business resources and tools.</li>
+                <li>Discounted rates for Chamber-sponsored events and programs.</li>
+                <li>Ability to participate in Chamber committees and task forces.</li>
+              </ul>
+              <a href="#" class="close-link">Close</a>
+            </div>
+          </div>
+
+          <div class="membership-item">
+            <h3><a href="#silver-membership">Silver Membership &blacktriangledown;</a></h3>
+            <div class="membership-details" id="silver-membership">
+              <ul>
+                <li>Enhanced membership package - <span>$500</span></li>
+                <li>All benefits of Bronze Membership.</li>
+                <li>Priority listing in the Chamber's online directory.</li>
+                <li>Increased visibility through featured spotlights on the Chamber's website.</li>
+                <li>Exclusive access to industry-specific workshops and seminars.</li>
+                <li>Increased promotion through the Chamber's social media channels.</li>
+                <li>Access to market research and economic reports.</li>
+                <li>Sponsorship opportunities for Chamber events.</li>
+              </ul>
+              <a href="#" class="close-link">Close</a>
+            </div>
+          </div>
+
+          <div class="membership-item">
+            <h3><a href="#gold-membership">Gold Membership &blacktriangledown;</a></h3>
+            <div class="membership-details" id="gold-membership">
+              <ul>
+                <li>Premium membership package - <span>$1000</span></li>
+                <li>All benefits of Silver Membership.</li>
+                <li>Premium placement in the Chamber's online directory.</li>
+                <li>Prominent recognition on the Chamber's website homepage.</li>
+                <li>Priority access to Chamber leadership and influential members.</li>
+                <li>VIP invitations to exclusive events and receptions.</li>
+                <li>Access to executive-level networking opportunities.</li>
+                <li>Customized marketing and promotional opportunities.</li>
+                <li>Recognition as a major supporter of the Chamber's initiatives.</li>
+              </ul>
+              <a href="#" class="close-link">Close</a>
+            </div>
+          </div>     
+        
+
+      <!--<div class="join-div">
+        <h2>Membership Benefits</h2>
+        <ul>NP Membership (Non-Profit Organization): <br><br>
+          <li>Free membership - <span>No Fees!</span></li>
+          <li>Access to networking events and business forums.</li>
+          <li>Inclusion in the Chamber's online directory.</li>
+          <li>Opportunities to collaborate with other non-profit organizations.</li>
+          <li>Listing of events and fundraisers in the Chamber's newsletter.</li>
+          <li>Access to educational resources and training materials.</li>
+        </ul>
+          
+
+        <ul>Bronze Membership: <br><br>
+          <li>Basic membership package - <span>$100</span></li>
+          <li>All benefits of NP Membership.</li>
+          <li>Opportunity to attend Chamber networking events and workshops.</li>
+          <li>Listing in the Chamber's online directory with an enhanced profile.</li>
+          <li>Access to member-exclusive business resources and tools.</li>
+          <li>Discounted rates for Chamber-sponsored events and programs.</li>
+          <li>Ability to participate in Chamber committees and task forces.</li>
+        </ul>
+ 
+        <ul>Silver Membership: <br><br>
+          <li>Enhanced membership package - <span>$500</span></li>
+          <li>All benefits of Bronze Membership.</li>
+          <li>Priority listing in the Chamber's online directory.</li>
+          <li>Increased visibility through featured spotlights on the Chamber's website.</li>
+          <li>Exclusive access to industry-specific workshops and seminars.</li>
+          <li>Increased promotion through the Chamber's social media channels.</li>
+          <li>Access to market research and economic reports.</li>
+          <li>Sponsorship opportunities for Chamber events.</li>
+        </ul>
+      
+        <ul>Gold Membership: <br><br>
+          <li>Premium membership package - <span>$1000</span></li>
+          <li>All benefits of Silver Membership.</li>
+          <li>Premium placement in the Chamber's online directory.</li>
+          <li>Prominent recognition on the Chamber's website homepage.</li>
+          <li>Priority access to Chamber leadership and influential members.</li>
+          <li>VIP invitations to exclusive events and receptions.</li>
+          <li>Access to executive-level networking opportunities.</li>
+          <li>Customized marketing and promotional opportunities.</li>
+          <li>Recognition as a major supporter of the Chamber's initiatives.</li> 
+        </ul>
+      </div> -->
+
+      
+
+    </main>
+
+    <footer>
+      <section class="top">
+        <img
+          class="footer-image"
+          src="images/logo.webp"
+          alt="Grove City Chamber of Commerce Logo"
+        />
+        <div class="info">
+          <h2>Grove City Chamber of Commerce</h2>
+          <p>4069 Broadway</p>
+          <p>Grove City, OH 44011</p>
+        </div>
+
+        <div class="contact-map">
+          <p>info@grovecitycc.org</p>
+          <p>(555) 123-1234</p>
+          <a
+            href="https://www.google.com/maps?q=4069+Broadway,Grove+City,OH+43123"
+            target="_blank"
+          >
+            <img src="images/map-icon-white-19.jpg" alt="map maker icon" />
+            <p>Map Location</p></a
+          >
+        </div>
+      </section>
+
+      <section class="bottom">
+        <p>
+          &copy; <span id="currentdate"> </span> Grove City Chamber of Commerce
+        </p>
+        <p>Jonathan Cross</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="modified"></span></p>
+      </section>
+    </footer>
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/windchill.js"></script>
   </body>
 </html>
