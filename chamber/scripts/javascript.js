@@ -30,6 +30,7 @@ const createCardView = (business) => {
   phone.textContent = business.phone;
   website.textContent = business.website;
 
+  website.setAttribute("href", business.website);
   image.setAttribute("src", business.image);
   image.setAttribute("alt", `Portrait of ${business.name}`);
   image.setAttribute("loading", "lazy");
@@ -63,7 +64,7 @@ const createListView = (business) => {
 
   let websiteLink = document.createElement("a");
   websiteLink.textContent = business.website;
-  websiteLink.href = business.website;
+  websiteLink.setAttribute("href", business.website);
   websiteLink.target = "_blank"; // Open the link in a new tab
 
   websiteCell.appendChild(websiteLink);

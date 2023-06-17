@@ -418,7 +418,7 @@ form label input:required:valid {
   display: grid;
   background-color: #c1c6ba;
   border: none;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
@@ -485,13 +485,13 @@ tr:nth-child(odd) {
 }
 
 .info-box p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   font-family: "Abril Fatface";
 }
 
 .info-box a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #2a571d;
 }
 
