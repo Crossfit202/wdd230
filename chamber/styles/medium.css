@@ -189,6 +189,14 @@
     grid-template-rows: 1fr;
   }
 
+  .directory-main {
+    display: flex;
+  }
+
+  td {
+    font-size: 1.3rem;
+  }
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

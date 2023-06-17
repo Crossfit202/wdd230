@@ -146,6 +146,10 @@
     align-self: center;
   }
 
+  td {
+    font-size: 2rem;
+  }
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

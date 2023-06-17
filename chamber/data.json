@@ -1,0 +1,77 @@
+{
+    "businesses": [
+      {
+        "name": "AMF Stardust Lanes",
+        "address": "2434 Old Stringtown RD, Grove City, OH 43123",
+        "phone": "(614) 875-4343",
+        "website": "https://www.amf.com",
+        "image": "", 
+        "mLevel": "Bronze"
+      },
+      {
+        "name": "Local Cantina Grove City",
+        "address": "3937 Broadway, Grove City, OH 43123",
+        "phone": "(614) 782-2545",
+        "website": "https://www.localcantina.com",
+        "image": "",
+        "mLevel": "Silver"
+      },
+      {
+        "name": "Grandstand Pizza Shop",
+        "address": "4034 Broadway, Grove City, OH 43123",
+        "phone": "(614) 875-0938",
+        "website": "https://www.pizzagrovecity.com",
+        "image": "",
+        "mLevel": "Bronze"
+      },
+      {
+        "name": "Dannette's Floral Shop",
+        "address": "3870 Broadway, Grove City, OH 43123",
+        "phone": "(614) 991-5258",
+        "website": "https://www.dannetesfloralboutique.com",
+        "image": "",
+        "mLevel": "Silver"
+      },
+      {
+        "name": "Gillivan Plumbing and Electric",
+        "address": "3302 Park St, Grove City, OH 43123",
+        "phone": "(614) 871-1987",
+        "website": "https://www.go.thryv.com",
+        "image": "",
+        "mLevel": "Silver"
+      },
+      {
+        "name": "Skate America",
+        "address": "4357 Broadway, Grove City, OH 43123",
+        "phone": "(614) 875-7606",
+        "website": "https://www.skateamericarink.com",
+        "image": "",
+        "mLevel": "Gold"
+      },
+      {
+        "name": "Grove City Family Dentistry",
+        "address": "3031 Columbus St, Grove City, OH 43123",
+        "phone": "(614) 875-2153",
+        "website": "https://www.gcfamdent.com",
+        "image": "",
+        "mLevel": "Gold"
+      },
+      {
+        "name": "Range USA Grove City",
+        "address": "3004 Turnberry Ct, Grove City, OH 43123",
+        "phone": "(380) 666-6587",
+        "website": "https://www.rangeusa.com",
+        "image": "",
+        "mLevel": "Gold"
+      },
+      {
+        "name": "Big Bounce",
+        "address": "1645 Gateway Cir, Grove City, OH 43123",
+        "phone": "(614) 957-5382",
+        "website": "https://www.bigbouncegrovecity.com",
+        "image": "",
+        "mLevel": "Silver"
+      }
+      
+    ]
+  }
