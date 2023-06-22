@@ -35,16 +35,15 @@ figcaption {
 
 .icon-box {
   display: flex;
+  color: navy;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightsteelblue;
+  background-color: white;
   width: 35%;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: -5px 5px 5px white;
+  box-shadow: -5px 5px 5px lightblue;
   min-width: 350px;
   text-align: center;
-  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000,
-    1px 1px 0 #000000;
 }
