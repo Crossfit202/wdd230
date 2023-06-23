@@ -157,13 +157,12 @@
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 50px;
+    grid-template-rows: 80% 20%;
     line-height: 1rem;
   }
 
   .top img {
-    max-height: 100%;
-    padding: 20px;
+    max-width: 200px;
     background-color: #2a571d;
   }
 
@@ -178,7 +177,7 @@
 
   .contact-map {
     grid-area: 1 / 2 / 2 / 3;
-    line-height: 0.5rem;
+    margin-left: 100px;
   }
 
   .contact-map img {

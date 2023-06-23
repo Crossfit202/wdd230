@@ -211,7 +211,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 40px;
-    line-height: 1rem;
   }
 
   .top {
@@ -236,10 +235,5 @@
   .bottom p + p::before {
     content: " | ";
     white-space: pre;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
   }
 }

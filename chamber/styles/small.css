@@ -486,8 +486,6 @@ footer {
   flex-direction: column;
   background-color: #2a571d;
   text-align: center;
-  line-height: 0.5rem;
-  padding: 15px;
   color: #fff;
   font-family: "Abril Fatface";
 }
@@ -511,6 +509,10 @@ footer a p {
 
 .bottom {
   border-top: 2px solid white;
+}
+
+.top {
+  padding: 15px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
