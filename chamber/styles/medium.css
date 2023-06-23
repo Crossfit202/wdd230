@@ -18,8 +18,8 @@
   main {
     background-color: #c1c6ba;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 200px 200px 15% 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 200px 300px 15% 1fr;
     gap: 5px;
     height: 100%;
   }
@@ -42,6 +42,7 @@
   .hicta {
     grid-area: 1 / 1 / 2 / 3;
     background-image: url("/chamber/images/neighborhood768.webp");
+    height: auto;
   }
 
   .event {
@@ -51,16 +52,10 @@
   .weather {
     grid-area: 5 / 2 / 6 / 3;
     justify-self: center;
-    width: 90%;
   }
 
   .news {
     grid-area: 2 / 1 / 3 / 3;
-  }
-
-  .news p {
-    font-size: 1.5em;
-    padding: 10px;
   }
 
   .join {

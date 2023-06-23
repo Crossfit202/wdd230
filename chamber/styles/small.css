@@ -5,7 +5,6 @@
 }
 
 html {
-  height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -37,8 +36,14 @@ main h2 {
   font-family: "Old Standard TT", sans-serif;
   color: white;
   text-shadow: 1px 1px 0 #000;
-  font-size: 5vw;
+  font-size: 3rem;
   margin: 10px;
+}
+
+div p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 header {
@@ -160,7 +165,7 @@ main div {
 }
 
 .hicta {
-  background-image: url("/images/neighborhood500.webp");
+  background-image: url("/chamber/images/neighborhood500.webp");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -171,7 +176,6 @@ main div {
 
 .hicta h2 {
   color: #2a571d;
-  font-size: 2.5em;
 }
 
 main a {
@@ -180,56 +184,47 @@ main a {
 }
 
 .weather {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   align-self: center;
   justify-self: center;
   background-color: #2a571d;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   font-size: 1.3rem;
+}
+
+.weather-information {
+  background-color: white;
+  width: 350px;
+  border-radius: 15px;
+  line-height: 0.6;
+}
+
+.weather-information p {
+  color: #2a571d;
 }
 
 .icon-temperature {
   display: flex;
-  background-color: #2a571d;
+  background-color: #6e9c2f;
   border: none;
   align-items: center;
   justify-content: center;
-}
-
-.icon-temperature div {
-  background-color: #6e9c2f;
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.weather p {
-  align-self: center;
-  color: white;
-  margin: 3px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px white;
 }
 
 .icon-temperature span {
   font-size: 3rem;
-}
-
-.weather img {
-  width: 50%;
-}
-
-.event-text {
   color: white;
-  font-size: 1em;
+  text-shadow: 2px 2px 2px black;
   padding: 10px;
 }
 
-.event-text a {
-  color: white;
-  text-decoration: underline;
+#description {
+  font-size: 2rem;
 }
 
 .call-to-action {
@@ -272,14 +267,13 @@ main a {
 
 .spotlight p {
   color: #2a571d;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 1px black;
 }
 
 .spotlight h2 {
   color: #2a571d;
   padding: 5px;
-  width: 100%;
   font-family: "Abril Fatface";
   text-shadow: 2px 2px 2px white;
 }
@@ -290,19 +284,6 @@ main a {
 
 .join {
   display: none;
-}
-.news h2 {
-  font-size: 1.5rem;
-}
-
-.news p {
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px;
-  overflow: hidden;
-  text-align: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 
 .image_container img {
