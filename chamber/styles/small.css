@@ -515,6 +515,10 @@ footer a p {
   padding: 15px;
 }
 
+.weather-link {
+  color: white;
+}
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
