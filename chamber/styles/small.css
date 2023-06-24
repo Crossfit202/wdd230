@@ -402,10 +402,6 @@ form label input:required:valid {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.cards p {
-  color: #2a571d;
-}
-
 .card {
   border: 2px solid black;
   margin: 10px;
@@ -473,6 +469,7 @@ tr:nth-child(odd) {
   font-size: 1rem;
   text-align: center;
   font-family: "Abril Fatface";
+  color: #2a571d;
 }
 
 .info-box a {

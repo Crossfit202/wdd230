@@ -32,10 +32,10 @@ const createCardView = (business) => {
 
   website.setAttribute("href", business.website);
   image.setAttribute("src", business.image);
-  image.setAttribute("alt", `Portrait of ${business.name}`);
+  image.setAttribute("alt", `Image of ${business.name}`);
   image.setAttribute("loading", "lazy");
-  image.setAttribute("width", "600");
-  image.setAttribute("height", "400");
+  image.setAttribute("width", "300");
+  image.setAttribute("height", "300");
 
   info.setAttribute("class", "info-box");
 
@@ -46,6 +46,7 @@ const createCardView = (business) => {
   info.appendChild(phone);
   card.appendChild(info);
   info.appendChild(website);
+  card.appendChild(image);
 
   return card;
 };

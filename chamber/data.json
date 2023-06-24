@@ -5,7 +5,7 @@
         "address": "2434 Old Stringtown RD, Grove City, OH 43123",
         "phone": "(614) 875-4343",
         "website": "https://www.amf.com",
-        "image": "", 
+        "image": "images/bowling.webp", 
         "mLevel": "Bronze"
       },
       {
@@ -13,7 +13,7 @@
         "address": "3937 Broadway, Grove City, OH 43123",
         "phone": "(614) 782-2545",
         "website": "https://www.localcantina.com",
-        "image": "",
+        "image": "images/local cantina.webp",
         "mLevel": "Silver"
       },
       {
@@ -21,7 +21,7 @@
         "address": "4034 Broadway, Grove City, OH 43123",
         "phone": "(614) 875-0938",
         "website": "https://www.pizzagrovecity.com",
-        "image": "",
+        "image": "images/grandstand pizza.webp",
         "mLevel": "Bronze"
       },
       {
@@ -29,7 +29,7 @@
         "address": "3870 Broadway, Grove City, OH 43123",
         "phone": "(614) 991-5258",
         "website": "https://www.dannetesfloralboutique.com",
-        "image": "",
+        "image": "images/dannettes floral shop.webp",
         "mLevel": "Silver"
       },
       {
@@ -37,7 +37,7 @@
         "address": "3302 Park St, Grove City, OH 43123",
         "phone": "(614) 871-1987",
         "website": "https://www.go.thryv.com",
-        "image": "",
+        "image": "images/Gillivan plumbing .webp",
         "mLevel": "Silver"
       },
       {
@@ -45,7 +45,7 @@
         "address": "4357 Broadway, Grove City, OH 43123",
         "phone": "(614) 875-7606",
         "website": "https://www.skateamericarink.com",
-        "image": "",
+        "image": "images/skate america.webp",
         "mLevel": "Gold"
       },
       {
@@ -53,7 +53,7 @@
         "address": "3031 Columbus St, Grove City, OH 43123",
         "phone": "(614) 875-2153",
         "website": "https://www.gcfamdent.com",
-        "image": "",
+        "image": "images/family dentistry.webp",
         "mLevel": "Gold"
       },
       {
@@ -61,7 +61,7 @@
         "address": "3004 Turnberry Ct, Grove City, OH 43123",
         "phone": "(380) 666-6587",
         "website": "https://www.rangeusa.com",
-        "image": "",
+        "image": "images/range usa.webp",
         "mLevel": "Gold"
       },
       {
@@ -69,7 +69,7 @@
         "address": "1645 Gateway Cir, Grove City, OH 43123",
         "phone": "(614) 957-5382",
         "website": "https://www.bigbouncegrovecity.com",
-        "image": "",
+        "image": "images/big_bounce.webp",
         "mLevel": "Silver"
       }
       
