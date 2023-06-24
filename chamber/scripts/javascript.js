@@ -113,8 +113,8 @@ const createCardView = (business) => {
   image.setAttribute("src", business.image);
   image.setAttribute("alt", `Image of ${business.name}`);
   image.setAttribute("loading", "lazy");
-  image.setAttribute("width", "300");
-  image.setAttribute("height", "300");
+  image.setAttribute("width", "200");
+  image.setAttribute("height", "200");
 
   info.setAttribute("class", "info-box");
 
