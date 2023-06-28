@@ -41,7 +41,7 @@
   }
   .hicta {
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url("/chamber/images/neighborhood768.webp");
+    background-image: url('../images/neighborhood768.webp');
     height: auto;
   }
 
