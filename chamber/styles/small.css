@@ -91,6 +91,7 @@ nav a {
   font-size: 2rem;
   color: white;
   margin-left: 5.2rem;
+  cursor: pointer;
 }
 
 nav ul {
