@@ -64,10 +64,6 @@
     grid-template-rows: 500px 1fr 250px;
   }
 
-  main h2 {
-    font-size: 2em;
-  }
-
   .hicta {
     grid-area: 1 / 2 / 3 / 3;
     height: 100%;
