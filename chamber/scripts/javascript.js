@@ -62,19 +62,56 @@ if (currentDay === 1 || currentDay === 2) {
   document.body.insertBefore(banner, document.body.firstChild);
 }
 
-var contentDiv = document.getElementById("event");
-var moreInfoButton = document.getElementById("moreInfoButton");
+async function calculateDays() {
+  var lastVisit = localStorage.getItem("lastVisit");
 
-var lastVisit = localStorage.getItem("lastVisit");
+  var currentVisit = new Date().getTime();
 
-var currentVisit = new Date().getTime();
+  localStorage.setItem("lastVisit", currentVisit);
 
-localStorage.setItem("lastVisit", currentVisit);
+  if (lastVisit) {
+    var timeDifference = currentVisit - parseInt(lastVisit);
+    var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  } else {
+  }
 
-if (lastVisit) {
-  var timeDifference = currentVisit - parseInt(lastVisit);
-  var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  document.getElementById("timeDifference").textContent =
+    "Welcome Back! Days since last visit: " + daysDifference;
+}
+
+calculateDays();
+
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const imgOptions = {
+  threshold: 0,
+  rootMarin: "0px 0px 100px 0px",
+};
+
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  }, imgOptions);
+
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
 } else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
 }
 
 const cardViewButton = document.getElementById("cardViewButton");
@@ -121,11 +158,11 @@ const createCardView = (business) => {
   card.setAttribute("class", "card");
 
   card.appendChild(h2);
+  card.appendChild(image);
   info.appendChild(address);
   info.appendChild(phone);
   card.appendChild(info);
   info.appendChild(website);
-  card.appendChild(image);
 
   return card;
 };
@@ -187,39 +224,3 @@ async function getBusinessData() {
 }
 
 getBusinessData();
-
-document.getElementById("timeDifference").textContent =
-  "Welcome Back! Days since last visit: " + daysDifference;
-
-const imagesToLoad = document.querySelectorAll("img[data-src]");
-
-const imgOptions = {
-  threshold: 0,
-  rootMarin: "0px 0px 100px 0px",
-};
-
-const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
-  image.onload = () => {
-    image.removeAttribute("data-src");
-  };
-};
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((items, observer) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        loadImages(item.target);
-        observer.unobserve(item.target);
-      }
-    });
-  }, imgOptions);
-
-  imagesToLoad.forEach((img) => {
-    observer.observe(img);
-  });
-} else {
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
-}

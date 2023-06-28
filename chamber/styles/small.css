@@ -9,6 +9,12 @@ html {
   margin: 0;
 }
 
+/* -------------------- Home Page --------------------*/
+
+h1 {
+  font-family: "Old Standard TT", sans-serif;
+}
+
 .banner {
   font-size: 4vw;
   text-align: center;
@@ -16,20 +22,6 @@ html {
   padding: 10px;
   color: #2a571d;
   font-family: "Old Standard TT", sans-serif;
-}
-
-h1 {
-  font-family: "Old Standard TT", sans-serif;
-}
-
-.discover-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.image_container {
-  display: flex;
-  flex-direction: column;
 }
 
 main h2 {
@@ -56,13 +48,6 @@ header {
   text-align: center;
   background-color: #2a571d;
   color: #fff;
-}
-.social img {
-  background-color: #6e9c2f;
-  max-width: 5%;
-  margin: 5px;
-  padding: 0;
-  float: right;
 }
 
 header img {
@@ -243,13 +228,12 @@ main a {
   margin: 10px;
 }
 
-#timeDifference {
-  background-color: #cbe5a7;
-  color: #2a571d;
-  text-shadow: 2px 2px 2px white;
-  font-size: 2.5em;
-  padding: 10px;
-  margin: 20px;
+.social img {
+  background-color: #6e9c2f;
+  max-width: 5%;
+  margin: 5px;
+  padding: 0;
+  float: right;
 }
 
 .spotlight div {
@@ -286,17 +270,76 @@ main a {
   display: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a571d;
+  text-align: center;
+  color: #fff;
+  font-family: "Abril Fatface";
+}
+
+footer h2 {
+  font-size: 1em;
+}
+
+footer img {
+  max-width: 30%;
+  background-color: white;
+}
+
+footer a img {
+  max-width: 10%;
+}
+
+footer a p {
+  color: white;
+}
+
+.bottom {
+  border-top: 2px solid white;
+}
+
+.top {
+  padding: 15px;
+}
+
+.weather-link {
+  color: white;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -------------------- Discover Page --------------------*/
+
+.discover-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.image_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#timeDifference {
+  background-color: #cbe5a7;
+  color: #2a571d;
+  text-shadow: 2px 2px 2px white;
+  font-size: 2.5em;
+  padding: 10px;
+  margin: 20px;
+}
+
 .image_container img {
   padding: 15px;
   width: 85%;
   background-color: #6e9c2f;
-}
-
-.caption {
-  color: white;
-  padding: 10px;
-  margin: 10px;
-  font-size: 1.5em;
 }
 
 .discover-heading {
@@ -308,16 +351,33 @@ main a {
   padding: 10px;
 }
 
-.demographics {
-  color: #2a571d;
-  font-size: 1.5em;
-  background-color: white;
-  padding: 10px;
-}
-
 .image_container h2 {
   font-size: 2.5rem;
 }
+
+.demographics {
+  background-color: white;
+}
+
+.demographics p {
+  color: #2a571d;
+}
+
+.demographics h3 {
+  color: #2a571d;
+  font-size: 2em;
+}
+
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
+/* -------------------- Join Page --------------------*/
 
 .join-main {
   background-color: white;
@@ -380,6 +440,8 @@ form label input:required:valid {
   display: none;
 }
 
+/* -------------------- Thank You Page --------------------*/
+
 .thankyou-main {
   background-color: white;
   text-align: center;
@@ -394,6 +456,8 @@ form label input:required:valid {
   font-size: 1.7rem;
   color: #2a571d;
 }
+
+/* -------------------- Directory Page --------------------*/
 
 .cards {
   display: grid;
@@ -414,6 +478,10 @@ form label input:required:valid {
   background-color: #2a571d;
   box-shadow: 0 5px 7px rgba(109, 16, 16, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  margin-bottom: 20px;
 }
 
 .cards.list-view {
@@ -480,49 +548,4 @@ tr:nth-child(odd) {
 .info-box a:hover {
   background-color: #6e9c2f;
   color: white;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #2a571d;
-  text-align: center;
-  color: #fff;
-  font-family: "Abril Fatface";
-}
-
-footer h2 {
-  font-size: 1em;
-}
-
-footer img {
-  max-width: 30%;
-  background-color: white;
-}
-
-footer a img {
-  max-width: 10%;
-}
-
-footer a p {
-  color: white;
-}
-
-.bottom {
-  border-top: 2px solid white;
-}
-
-.top {
-  padding: 15px;
-}
-
-.weather-link {
-  color: white;
-}
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
