@@ -37,7 +37,7 @@
   }
   .hicta {
     grid-area: 1 / 1 / 2 / 3;
-    background-image: url('../images/neighborhood768.webp');
+    background-image: url("../images/neighborhood768.webp");
     height: auto;
   }
 
@@ -236,5 +236,5 @@
 
 .contact-main p {
   justify-content: center;
+  font-size: 1.8em;
 }
-

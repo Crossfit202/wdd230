@@ -573,7 +573,7 @@ tr:nth-child(odd) {
 .contact-main p {
   display: flex;
   align-items: center;
-  font-size: 1.8em;
+  font-size: 1em;
   color: #2a571d;
   background-color: #cbe5a7;
   text-shadow: 2px 2px 2px white;
