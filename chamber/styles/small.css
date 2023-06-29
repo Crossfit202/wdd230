@@ -218,6 +218,7 @@ main a {
 
 .call-to-action {
   background-color: #6e9c2f;
+  text-shadow: 2px 2px 2px black;
   color: white;
   border: none;
   max-width: 300px;
