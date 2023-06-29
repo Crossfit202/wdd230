@@ -492,6 +492,7 @@ form label input:required:valid {
 .cards.list-view {
   display: block;
   grid-template-columns: none;
+  align-self: center;
 }
 
 .cards.list-view a {
@@ -519,9 +520,10 @@ form label input:required:valid {
 
 td {
   text-align: center;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 5px;
+  box-sizing: border-box;
   border: 1px solid black;
+  font-size: .8rem;
 }
 
 tr:nth-child(odd) {
