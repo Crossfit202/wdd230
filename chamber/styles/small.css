@@ -553,3 +553,35 @@ tr:nth-child(odd) {
   background-color: #6e9c2f;
   color: white;
 }
+
+/* -------------------- Contact Page --------------------*/
+.contact-main {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-main h2 {
+  color: #2a571d;
+  font-size: 3em;
+}
+
+.contact-main p {
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+  color: #2a571d;
+  background-color: #cbe5a7;
+  text-shadow: 2px 2px 2px white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px #2a571d;
+  margin: 10px;
+  width: 90%;
+}
+
+.contact-main h3 {
+  color: #2a571d;
+  font-size: 1.9em;
+}

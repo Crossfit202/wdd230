@@ -233,3 +233,8 @@
     white-space: pre;
   }
 }
+
+.contact-main p {
+  justify-content: center;
+}
+
