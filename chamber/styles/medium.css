@@ -203,6 +203,11 @@
     font-size: 1.2rem;
   }
 
+  .contact-main p {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -232,9 +237,4 @@
     content: " | ";
     white-space: pre;
   }
-}
-
-.contact-main p {
-  justify-content: center;
-  font-size: 1.8em;
 }

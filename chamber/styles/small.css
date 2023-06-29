@@ -570,10 +570,14 @@ tr:nth-child(odd) {
   font-size: 3em;
 }
 
+.contact-main h3 {
+  color: #2a571d;
+  font-size: 1.9em;
+}
+
 .contact-main p {
   display: flex;
   align-items: center;
-  font-size: 1em;
   color: #2a571d;
   background-color: #cbe5a7;
   text-shadow: 2px 2px 2px white;
@@ -582,9 +586,5 @@ tr:nth-child(odd) {
   box-shadow: 5px 2px 2px #2a571d;
   margin: 10px;
   width: 90%;
-}
-
-.contact-main h3 {
-  color: #2a571d;
-  font-size: 1.9em;
+  font-size: 1.1em;
 }
