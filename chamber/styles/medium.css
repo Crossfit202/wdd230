@@ -19,7 +19,7 @@
     background-color: #c1c6ba;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 200px 300px 15% 1fr;
+    grid-template-rows: 1fr 200px 1fr 15% 1fr;
     gap: 5px;
     height: 100%;
   }
@@ -79,8 +79,19 @@
 
   .spotlight {
     grid-area: 3 / 1 / 4 / 3;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+
+  .sLight {
+    height: 100%;
+  }
+
+  .sLight a {
+    color: #6e9c2f;
+    font-size: 0.9em;
   }
 
   .spotlight img {
@@ -200,7 +211,7 @@
   }
 
   td {
-    font-size: 1.2rem;
+    font-size: 1.2em;
   }
 
   .contact-main p {

@@ -28,9 +28,9 @@
         "name": "Dannette's Floral Shop",
         "address": "3870 Broadway, Grove City, OH 43123",
         "phone": "(614) 991-5258",
-        "website": "https://www.dannetesfloralboutique.com",
+        "website": "https://www.dannetesfloral.com",
         "image": "images/dannettes floral shop.webp",
-        "mLevel": "Silver"
+        "mLevel": "Bronze"
       },
       {
         "name": "Gillivan Plumbing and Electric",
@@ -38,7 +38,7 @@
         "phone": "(614) 871-1987",
         "website": "https://www.go.thryv.com",
         "image": "images/Gillivan plumbing .webp",
-        "mLevel": "Silver"
+        "mLevel": "Bronze"
       },
       {
         "name": "Skate America",
@@ -68,9 +68,9 @@
         "name": "Big Bounce",
         "address": "1645 Gateway Cir, Grove City, OH 43123",
         "phone": "(614) 957-5382",
-        "website": "https://www.bigbouncegrovecity.com",
+        "website": "https://www.bigbounce.com",
         "image": "images/big_bounce.webp",
-        "mLevel": "Silver"
+        "mLevel": "Bronze"
       }
       
     ]

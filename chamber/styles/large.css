@@ -122,6 +122,14 @@
     justify-content: center;
   }
 
+  .sLight {
+    width: 89%;
+  }
+
+  .sLight:nth-child(3) {
+    display: block;
+  }
+
   .spotlight div {
     height: 31.5%;
     display: flex;

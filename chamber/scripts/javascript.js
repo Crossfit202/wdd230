@@ -114,6 +114,64 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+const displaySpotlight = (businesses) => {
+  const spotlights = document.querySelector("div.spotlight"); // select the output container element
+
+  const silverOrGoldBusinesses = businesses.filter((business) => {
+    return business.mLevel === "Silver" || business.mLevel === "Gold";
+  });
+
+  const randomBusinesses = silverOrGoldBusinesses.slice(0, 3);
+
+  randomBusinesses.forEach((business) => {
+    // Create elements to add to the div.spotlight element
+    let card = document.createElement("section");
+    let h2 = document.createElement("h2");
+    let picture = document.createElement("img");
+    let phone = document.createElement("p");
+    let website = document.createElement("a");
+    let address = document.createElement("p");
+
+    // Build the h2 content out to show the business name
+    h2.textContent = `${business.name}`;
+    phone.textContent = `${business.phone}`;
+    address.textContent = `${business.address}`;
+    website.textContent = `${business.website}`;
+
+    // Build the image by setting all the relevant attribute
+    picture.setAttribute("src", business.image);
+    picture.setAttribute("alt", `Picture of ${business.name}`);
+    website.setAttribute("href", business.website);
+
+    card.setAttribute("class", "sLight");
+
+    // Append the section(card) with the created elements
+    card.appendChild(h2);
+    card.appendChild(website);
+    card.appendChild(phone);
+    card.appendChild(address);
+    card.appendChild(picture);
+
+    spotlights.appendChild(card);
+  });
+};
+
+async function getSpotlightData() {
+  const response = await fetch("data.json");
+  const data = await response.json();
+  //console.table(data.businesses);
+
+  // Only display 3 random businesses that have a business.mLevel value of "Silver" or "Gold"
+  displaySpotlight(
+    data.businesses
+      .filter((business) => {
+        return business.mLevel === "Silver" || business.mLevel === "Gold";
+      })
+      .slice(0, 3)
+  );
+}
+
+getSpotlightData();
 const cardViewButton = document.getElementById("cardViewButton");
 const listViewButton = document.getElementById("listViewButton");
 let currentView = "card"; // Initial view mode
@@ -219,7 +277,7 @@ const displayBusinesses = (businesses, viewMode) => {
 async function getBusinessData() {
   const response = await fetch("data.json");
   const data = await response.json();
-  console.table(data.businesses);
+  //console.table(data.businesses);
   displayBusinesses(data.businesses, currentView);
 }
 

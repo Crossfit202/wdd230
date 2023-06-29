@@ -165,6 +165,9 @@ main div {
 
 .hicta h2 {
   color: #2a571d;
+  background-color: white;
+  box-shadow: 5px 2px 2px #6e9c2f;
+  border-radius: 15px;
 }
 
 main a {
@@ -189,6 +192,7 @@ main a {
   width: 350px;
   border-radius: 15px;
   line-height: 0.6;
+  width: 90%;
 }
 
 .weather-information p {
@@ -203,6 +207,7 @@ main a {
   justify-content: center;
   border-radius: 15px;
   box-shadow: 5px 2px 2px white;
+  width: 90%;
 }
 
 .icon-temperature span {
@@ -247,6 +252,11 @@ main a {
 .spotlight {
   gap: 10px;
   background-color: hwb(86 60% 23%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 .spotlight a {
   color: blue;
@@ -267,8 +277,38 @@ main a {
   text-shadow: 2px 2px 2px white;
 }
 
-.s3 {
+.sLight:nth-of-type(3) {
   display: none;
+}
+
+.sLight {
+  background-color: white;
+  width: 89%;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px #6e9c2f;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sLight img {
+  width: 80%;
+}
+
+.sLight a {
+  color: #6e9c2f;
+  font-size: 0.7em;
+}
+
+.sLight h2 {
+  font-size: 2rem;
+}
+
+.sLight p {
+  font-size: 1.2em;
+  text-shadow: none;
 }
 
 .join {
@@ -519,11 +559,11 @@ form label input:required:valid {
 }
 
 td {
-  text-align: center;
+  text-align: left;
   padding: 5px;
   box-sizing: border-box;
   border: 1px solid black;
-  font-size: 0.8rem;
+  font-size: 0.5em;
 }
 
 tr:nth-child(odd) {
