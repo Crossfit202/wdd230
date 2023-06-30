@@ -234,6 +234,10 @@ main a {
   margin: 10px;
 }
 
+.call-to-action:hover {
+  background-color: white;
+  color: #2a571d;
+}
 .social img {
   background-color: #6e9c2f;
   max-width: 5%;
