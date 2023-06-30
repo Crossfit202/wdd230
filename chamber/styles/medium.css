@@ -12,7 +12,7 @@
   }
 
   .social img {
-    max-width: 3%;
+    max-width: 4%;
   }
 
   main {
@@ -48,6 +48,25 @@
   .weather {
     grid-area: 5 / 2 / 6 / 3;
     justify-self: center;
+  }
+
+  .icon-temperature {
+    display: flex;
+    background-color: #6e9c2f;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 5px 2px 2px white;
+    width: 90%;
+  }
+
+  .weather-information {
+    background-color: white;
+    width: 350px;
+    border-radius: 15px;
+    line-height: 0.6;
+    width: 90%;
   }
 
   .news {
@@ -222,7 +241,11 @@
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 40px;
+    grid-template-rows: 1fr 100px;
+  }
+
+  footer p {
+    line-height: 1.5em;
   }
 
   .top {
