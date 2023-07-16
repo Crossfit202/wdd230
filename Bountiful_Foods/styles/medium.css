@@ -1,0 +1,74 @@
+@media only screen and (min-width: 768px) {
+    .contact-social-container {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+    }
+
+    .contact-info {
+        border-right: 1px solid black;
+        font-size: 1.2rem;
+    }
+
+    .social {
+        margin: 10px 0;
+        border-left: 1px solid black;
+    }
+
+    .social img {
+        width: 60px;
+    }
+
+    .line {
+        width: 40px;
+        height: 5px;
+        background-color: #333;
+        margin: 3px 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu li {
+        font-size: 1.5rem;
+    }
+
+    .weather-container {
+        display: flex;
+        margin: 20px;
+        height: 500px;
+    }
+
+    .weather {
+        margin: 0;
+        border-right: 1px solid black;
+    }
+
+    #forecast {
+        border-left: 1px solid black;
+        height: 100%;
+    }
+
+    .coast {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .coast img {
+        padding: 0;
+        margin: 0;
+        width: 50%;
+    }
+
+    .coast img:hover {
+        width: 50%;
+    }
+
+    .words h2 {
+        font-size: 1.5rem;
+    }
+
+    .words {
+        padding: 10px;
+    }
+
+
+}

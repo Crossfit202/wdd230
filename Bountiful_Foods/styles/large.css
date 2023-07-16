@@ -1,0 +1,52 @@
+@media only screen and (min-width: 1024px) {
+    .logo {
+        display: none;
+    }
+
+    .contact-social-container {
+        justify-content: space-between;
+    }
+
+    .contact-info {
+        width: 220px;
+        height: 400px
+    }
+
+    .social {
+        width: 220px;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    header {
+        height: 400px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .call-to-action {
+        width: calc(100vw - 460px);
+        position: absolute;
+        top: 20%;
+        height: 600px;
+    }
+
+    .weather-container {
+        margin-top: 500px;
+    }
+
+    footer {
+        position: relative;
+    }
+
+}

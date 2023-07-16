@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bountiful Foods Project Home Page for Jonathan Cross in WDD 230: Web Frontend Development at BYU - Idaho">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Ysabeau+Office&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>Bountiful Foods | Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img class="logo" src="images/BF_Logo.webp" alt="Bountiful Foods Logo"></a>
+        <h1>Bountiful Foods</h1>
+
+        <div class="contact-social-container">
+            <div class="contact-info">
+                <a href="https://www.google.com/maps/" target="_blank">📍 Address: 123 Main Street,
+                    Carlsbad, CA</a> <br>
+                <p>📞 Phone: +1 (555) 123-4567</p> <br>
+                <a href="https://www.gmail.com/" target="_blank"> ✉️ Email: info@bountifulfoods.com <br></a>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png"
+                        alt="Linkedin Logo"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            </div>
+        </div>
+
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fresh">Fresh</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="call-to-action">
+            <div class="button-box">
+                <h2>You have created <span class="drinkNum"></span> drinks</h2>
+                <button>Create a Fruit Drink Mix</button>
+            </div>
+        </div>
+
+        <div class="weather-container">
+            <div class="weather">
+                <img id="weather-icon" src="#" alt="weather-icon" />
+                <div class="current-weather">
+                    <p><span id="city"></span></p>
+                    <p><span id="description"></span></p>
+                    <p><span id="current-temp"></span></p>
+                    <p><span id="humidity"></span></p>
+                </div>
+            </div>
+            <div id="forecast"></div>
+        </div>
+
+
+        <div class="coast">
+            <img src="images/beach.webp" alt="Picture of beautiful california coast line">
+            <div class="words">
+                <h2>The South Coast Region</h2>
+                <p>This region of California spans from Ventura County to the Mexican Border encompassing Los
+                    Angeles, Orange, and San Diego counties. Known for sandy beaches, excellent waves for
+                    surfing, beautiful climate, and a diverse population. <br> <br>
+
+                    Southern California is home to approximately 24 million people, making it the location of the two
+                    largest cities on the West Coast: Los Angeles and San Diego. </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum excepturi iste nulla error incidunt earum
+            quasi exercitationem dolorum? Rerum facilis quasi soluta animi dignissimos? Est minima quam quae at cumque.
+        </p>
+
+        <span id="last-modified"></span>
+    </footer>
+
+    <script src="scripts/javascript.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
