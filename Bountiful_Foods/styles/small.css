@@ -2,7 +2,7 @@
 *,
 html,
 body {
-    color: #254579;
+    color: #081b38;
     margin: 0;
     padding: 0;
 }
@@ -24,6 +24,8 @@ header {
     font-family: 'Ysabeau Office', sans-serif;
     border-bottom: 3px solid #254579;
 }
+
+
 
 .logo {
     width: 90px;
