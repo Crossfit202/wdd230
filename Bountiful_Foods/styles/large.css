@@ -3,19 +3,39 @@
         display: none;
     }
 
+    h1 {
+        font-size: 4.5em;
+        /* background-image: linear-gradient(green, white);
+        padding: 100px 20px 0 20px;
+        border: 3px solid #183d6e;
+        width: calc(100vw - 660px);
+        margin: 0 0 100px 0; */
+        text-align: center;
+        text-justify: auto;
+        margin: 0 0 20px 0;
+    }
+
     .contact-social-container {
         justify-content: space-between;
     }
 
     .contact-info {
         width: 220px;
-        height: 400px
+        height: 400px;
+        border-right: 3px solid #254579;
+        justify-content: space-between;
+    }
+
+    .contact-info a,
+    .contact-info p {
+        font-size: 1.3em;
     }
 
     .social {
         width: 220px;
         height: 400px;
         flex-direction: column;
+        border-left: 3px solid #254579
     }
 
     header {
@@ -27,26 +47,127 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        height: 100vh;
+        height: 100%;
     }
 
     .hamburger {
         display: none;
     }
 
+    .menu {
+        display: flex;
+        position: absolute;
+        top: 18.2%;
+        left: 230px;
+        width: calc(100vw - 460px);
+        background-color: #78A858;
+        border: 3px solid #254579;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a {
+        text-shadow: 2px 2px 2px rgb(136, 214, 136);
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        margin-bottom: 100px;
+    }
+
     .call-to-action {
         width: calc(100vw - 460px);
         position: absolute;
-        top: 20%;
-        height: 600px;
+        top: 23.7%;
+        height: 500px;
+        border: 3px solid #254579;
+    }
+
+    #formDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 1fr;
+        width: calc(100vw - 460px);
+        position: absolute;
+        top: 24.5%;
+        left: 230px;
+        border: 3px solid #254579;
+        background-color: #f7fbe3;
+    }
+
+    #orderSummary {
+        background-color: white;
+        margin-bottom: 30px;
+        width: 100%;
+        height: 95%;
+        border: 3px solid #254579;
+        border-radius: 20px;
+    }
+
+    #order-summary-display {
+        background-color: white;
+        border: none;
+    }
+
+
+    .fruit-header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-area: 1 / 1 / 2 / 3;
+        margin: 10px;
+    }
+
+    .fruit-header h2:nth-child(2) {
+        display: block;
+        grid-area: 1 / 2 / 2 / 3;
+        margin-left: 20px;
     }
 
     .weather-container {
-        margin-top: 500px;
+        margin-top: 450px;
+        height: 300px;
+        gap: 20px;
     }
+
+    .weather,
+    #forecast {
+        height: 300px;
+        border: 3px solid #254579;
+        margin: 0 20px;
+
+    }
+
+    .coast {
+        margin: 20px;
+        max-height: 450px;
+        border: 3px solid #254579;
+    }
+
+    .coast img {
+        max-height: 420px;
+        max-width: 699px;
+    }
+
+    #orderForm {
+        width: 90%;
+    }
+
+    #formDiv {
+        background-color: #DED369;
+    }
+
 
     footer {
-        position: relative;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #de70b0;
+        text-align: center;
     }
 
+    .thanks {
+        width: 100%;
+        margin-top: 700px;
+
+    }
 }

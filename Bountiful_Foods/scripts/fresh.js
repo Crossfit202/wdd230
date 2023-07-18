@@ -97,23 +97,25 @@ function handleSubmit(event) {
     var formattedDate = currentDate.toLocaleDateString('en-US');
 
     var orderSummary = document.createElement("div"); // Create a new div element
-    orderSummary.innerHTML = "Order Summary:<br><br>" +
-        "Order Date: " + formattedDate + "<br>" +
-        "First Name: " + firstName + "<br>" +
-        "Email: " + email + "<br>" +
-        "Phone Number: " + phone + "<br><br>" +
-        "Fruit 1: " + document.getElementById("fruit1").options[document.getElementById("fruit1").selectedIndex].text + "<br>" +
-        "Fruit 2: " + document.getElementById("fruit2").options[document.getElementById("fruit2").selectedIndex].text + "<br>" +
-        "Fruit 3: " + document.getElementById("fruit3").options[document.getElementById("fruit3").selectedIndex].text + "<br><br>" +
-        "Special Instructions: " + specialInstructions + "<br><br>" +
-        "Total Nutrition:<br>" +
-        "Carbohydrates: " + totalNutrition.carbohydrates + "g<br>" +
-        "Protein: " + totalNutrition.protein + "g<br>" +
-        "Fat: " + totalNutrition.fat + "g<br>" +
-        "Sugar: " + totalNutrition.sugar + "g<br>" +
-        "Calories: " + totalNutrition.calories + "kcal";
+    orderSummary.innerHTML = "<h2>Order Successfully Submitted!</h2><br><br>" +
+        "<strong>Order Date:</strong> " + formattedDate + "<br>" +
+        "<strong>First Name:</strong> " + firstName + "<br>" +
+        "<strong>Email:</strong> " + email + "<br>" +
+        "<strong>Phone Number:</strong> " + phone + "<br><br>" +
+        "<strong>Fruit 1:</strong> " + document.getElementById("fruit1").options[document.getElementById("fruit1").selectedIndex].text + "<br>" +
+        "<strong>Fruit 2:</strong> " + document.getElementById("fruit2").options[document.getElementById("fruit2").selectedIndex].text + "<br>" +
+        "<strong>Fruit 3:</strong> " + document.getElementById("fruit3").options[document.getElementById("fruit3").selectedIndex].text + "<br><br>" +
+        "<strong>Special Instructions:</strong> " + specialInstructions + "<br><br>" +
+        "<strong>Total Nutrition:</strong><br>" +
+        "<strong>Carbohydrates:</strong> " + totalNutrition.carbohydrates + "g<br>" +
+        "<strong>Protein:</strong> " + totalNutrition.protein + "g<br>" +
+        "<strong>Fat:</strong> " + totalNutrition.fat + "g<br>" +
+        "<strong>Sugar:</strong> " + totalNutrition.sugar + "g<br>" +
+        "<strong>Calories:</strong> " + totalNutrition.calories + "kcal";
 
     var orderSummaryContainer = document.getElementById("orderSummary");
+    orderSummary.setAttribute('id', 'order-summary-display')
+    orderSummaryContainer.innerHTML = '';
     orderSummaryContainer.appendChild(orderSummary);
 }
 

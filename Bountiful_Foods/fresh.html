@@ -1,48 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Fruit Drink Order Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bountiful Foods Project Fresh Page for Jonathan Cross in WDD 230: Web Frontend Development at BYU - Idaho">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Ysabeau+Office&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>Bountiful Foods | Fresh </title>
 </head>
 
 <body>
-    <h1>Fruit Drink Order Form</h1>
-    <form id="orderForm">
-        <section class="formNames">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" required><br><br>
+    <header>
+        <a href="#"><img class="logo" src="images/BF_Logo.webp" alt="Bountiful Foods Logo"></a>
+        <h1>Bountiful Foods</h1>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName"><br><br>
-        </section>
+        <div class="contact-social-container">
+            <div class="contact-info">
+                <a href="https://www.google.com/maps/" target="_blank">📍 Address: 123 Main Street,
+                    Carlsbad, CA</a> <br>
+                <p>📞 Phone: +1 (555) 123-4567</p> <br>
+                <a href="https://www.gmail.com/" target="_blank"> ✉️ Email: info@bfoods.com <br></a>
+            </div>
 
-        <section class="formContact">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="me@mail.com" required><br><br>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                        alt="Facebook Logo"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png"
+                        alt="Linkedin Logo"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            </div>
+        </div>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required><br><br>
-        </section>
+        <nav class="fresh-nav">
+            <div class="container">
 
-        <section class="formFruits">
-            <label for="fruit1">Fruit 1:</label>
-            <select id="fruit1" required></select><br><br>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
-            <label for="fruit2">Fruit 2:</label>
-            <select id="fruit2" required></select><br><br>
+                <div class="menu">
+                    <a href="#" class="is-active">Home</a>
+                    <a href="#">Fresh</a>
+                    <a href="# ">About Us</a>
+                </div>
+            </div>
+        </nav>
 
-            <label for="fruit3">Fruit 3:</label>
-            <select id="fruit3" required></select><br><br>
-        </section>
 
-        <label for="specialInstructions">Special Instructions:</label><br>
-        <textarea id="specialInstructions" placeholder="Please add extra ice cubes to the drink."></textarea><br><br>
 
-        <button id='button' type="submit" value="Submit"> Submit</button>
-        <div id="orderSummary"></div>
-    </form>
+    </header>
+    <main id="fresh-main">
+        <div id="formDiv">
+            <div class="fruit-header">
+                <h2>Fruit Drink Order Form</h2>
+                <h2>Order Summary ↓</h2>
+            </div>
+            <form id="orderForm">
+                <section class="formNames">
+                    <label for="firstName">First Name:
+                        <input type="text" id="firstName" required><br><br>
+                    </label>
+
+                    <label for="lastName">Last Name:
+                        <input type="text" id="lastName"><br><br>
+                    </label>
+                </section>
+
+                <section class="formContact">
+                    <label for="email">Email:
+                        <input type="email" id="email" placeholder="me@mail.com" required><br><br>
+                    </label>
+
+                    <label for="phone">Phone Number:
+                        <input type="tel" id="phone" required><br><br>
+                    </label>
+                </section>
+
+                <section class="formFruits">
+                    <label for="fruit1">Fruit 1:
+                        <select id="fruit1" required></select><br><br>
+                    </label>
+
+                    <label for="fruit2">Fruit 2:
+                        <select id="fruit2" required></select><br><br>
+                    </label>
+
+                    <label for="fruit3">Fruit 3:
+                        <select id="fruit3" required></select><br><br>
+                    </label>
+                </section>
+
+                <label for="specialInstructions">Special Instructions:<br>
+                    <textarea id="specialInstructions"
+                        placeholder="Please add extra ice cubes to the drink."></textarea><br><br>
+                </label>
+
+                <button id='submitButton' type="submit"> Create My Drink!</button>
+
+            </form>
+
+            <div id="orderSummary"></div>
+        </div>
+
+        <div class="thanks">
+            <h3>Our Commitment to Freshness</h3><br>
+            <p>
+                At Bountiful Foods, we take pride in providing you with the freshest produce available. We believe
+                in the importance of locally sourced ingredients and their impact on both flavor and sustainability.
+                Here's how we ensure that our produce is always fresh. All of our fruits and vegetables are sourced from
+                local farms within a 20 mile radius of our location.
+                By partnering with nearby farmers, we reduce the time and distance between harvest and delivery,
+                ensuring that you receive the highest quality produce. <br><br> </p>
+
+            <h3>Customer Satisfaction Guarantee</h3> <br>
+            <p>
+                Your satisfaction is our top priority. If, for any reason, you are not completely satisfied with the
+                freshness of our produce, please reach out to our customer support team. We will be more than happy to
+                address any concerns and make it right.
+
+                By choosing Bountiful Foods, you can be confident that the produce you order is locally grown and
+                guaranteed to be fresh. Join us in supporting local farmers and experience the exceptional flavors that
+                only freshly harvested fruits and vegetables can offer.</p>
+        </div>
+    </main>
+    <footer class="fresh-footer">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum excepturi iste nulla error incidunt earum
+            quasi exercitationem dolorum? Rerum facilis quasi soluta animi dignissimos? Est minima quam quae at
+            cumque.
+        </p>
+
+        <span id="last-modified"></span>
+    </footer>
 
     <script src="scripts/fresh.js"></script>
+    <script src="scripts/javascript.js"></script>
 </body>
 
 </html>

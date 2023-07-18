@@ -1,10 +1,10 @@
-function toggleMenu() {
-  const hamburger = document.querySelector('.hamburger');
-  const menu = document.querySelector('.menu');
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
 
-  hamburger.classList.toggle('change');
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-}
+hamburger.addEventListener('click', function () {
+  this.classList.toggle('is-active');
+  menu.classList.toggle('open');
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
