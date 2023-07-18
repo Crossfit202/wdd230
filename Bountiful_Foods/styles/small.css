@@ -231,8 +231,8 @@ h2 {
 }
 
 #weather-icon {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
     background-color: skyblue;
     border-radius: 20px;

@@ -45,6 +45,11 @@
         border-right: 1px solid #254579;
     }
 
+    #weather-icon {
+        width: 100px;
+        height: 100px;
+    }
+
     #forecast {
         border-left: 1px solid #254579;
         height: 100%;
