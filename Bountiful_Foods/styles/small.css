@@ -35,8 +35,7 @@ header {
 }
 
 h1 {
-    margin: 0;
-    font-size: 1.5em;
+    display: none;
 }
 
 .contact-social-container {
@@ -135,6 +134,30 @@ h1 {
 }
 
 .menu a:hover {
+    background-color: white;
+    border-radius: 46px;
+}
+
+.freshMenu {
+    display: none;
+}
+
+.freshMenu.open {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 1rem;
+}
+
+
+.freshMenu a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+}
+
+.freshMenu a:hover {
     background-color: white;
     border-radius: 46px;
 }
@@ -369,6 +392,8 @@ footer {
     font-size: 0.9em;
 }
 
+/* ---------- Form ------------- */
+
 label input {
     margin: 5px;
     padding: 5px;
@@ -392,6 +417,7 @@ strong {
     margin: 30px 10px 10px 10px;
     border: 8px solid #254579;
     text-shadow: 2px 2px 2px rgb(136, 214, 136);
+    font-size: 0.7em;
 }
 
 #formDiv {
@@ -412,11 +438,13 @@ strong {
     border-radius: 20px;
     border: 3px solid #254579;
     width: 100%;
+    font-size: 0.7em;
 }
 
 
 .fruit-header {
-    margin: 40px;
+    margin: 20px;
+    font-size: 0.9em;
 }
 
 .fruit-header h2:nth-child(2) {
@@ -441,6 +469,7 @@ form button {
     margin: 20px 0;
     padding: 10px;
     background-color: white;
+    font-size: 0.7em;
 }
 
 #formDiv {
@@ -454,4 +483,30 @@ form button {
 
 textarea {
     margin: 10px 0;
+}
+
+#aboutDiv {
+    font-size: 0.7em;
+    background-color: white;
+    margin: 20px 0;
+    border-top: 3px solid #254579;
+    border-bottom: 3px solid #254579;
+    padding: 10px;
+}
+
+.aboutContact a,
+.aboutContact p {
+    margin: 10px;
+    font-size: 0.8em;
+}
+
+.aboutContact {
+    background-color: #ded369;
+    width: 100%;
+    border-top: 3px solid #254579;
+    border-bottom: 3px solid #254579;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

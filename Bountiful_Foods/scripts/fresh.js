@@ -1,6 +1,23 @@
 // Variable to store the fruit data
 var fruitData;
 
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.freshMenu');
+
+hamburger.addEventListener('click', function () {
+    this.classList.toggle('is-active');
+    menu.classList.toggle('open');
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var footer = document.getElementById('last-modified');
+    var lastModifiedDate = document.lastModified;
+    footer.textContent = 'Last modified: ' + lastModifiedDate;
+});
+
+
+
 // Function to populate select elements with fruit options
 function populateFruitOptions() {
     fetch('fruits.json')

@@ -8,6 +8,7 @@
     }
 
     h1 {
+        display: block;
         font-size: 3em;
         text-align: center;
         text-justify: auto;
@@ -131,7 +132,7 @@
         grid-template-rows: 50px 1fr;
         width: calc(100vw - 460px);
         position: absolute;
-        top: 24.5%;
+        top: 17.9%;
         left: 230px;
         border: 3px solid #254579;
         background-color: #f7fbe3;
@@ -192,6 +193,7 @@
 
     #orderForm {
         width: 90%;
+        font-size: 1em;
     }
 
     #formDiv {
@@ -212,7 +214,41 @@
 
     .thanks {
         width: 100%;
-        margin-top: 700px;
+        margin-top: 625px;
+        font-size: 1em;
+    }
 
+    .freshMenu {
+        display: flex;
+        position: absolute;
+        top: 13.4%;
+        left: 230px;
+        width: calc(100vw - 460px);
+        background-color: #78A858;
+        border: 3px solid #254579;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .freshMenu a {
+        text-shadow: 2px 2px 2px rgb(136, 214, 136);
+        font-size: 1.4rem;
+        background-color: white;
+        border-radius: 46px;
+    }
+
+    #aboutDiv {
+        width: calc(100vw - 460px);
+        position: absolute;
+        top: 17.9%;
+        left: 230px;
+        border: 3px solid #254579;
+        background-color: #f7fbe3;
+        font-size: 1em;
+    }
+
+    .aboutContact {
+        margin-top: 450px;
     }
 }
