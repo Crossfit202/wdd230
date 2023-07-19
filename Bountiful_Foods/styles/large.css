@@ -3,39 +3,49 @@
         display: none;
     }
 
+    body header {
+        height: 250px;
+    }
+
     h1 {
-        font-size: 4.5em;
-        /* background-image: linear-gradient(green, white);
-        padding: 100px 20px 0 20px;
-        border: 3px solid #183d6e;
-        width: calc(100vw - 660px);
-        margin: 0 0 100px 0; */
+        font-size: 3em;
         text-align: center;
         text-justify: auto;
-        margin: 0 0 20px 0;
+        z-index: 99;
+        padding: 0;
+        margin: 10px;
+        position: absolute;
+        top: 0;
     }
 
     .contact-social-container {
         justify-content: space-between;
+        margin-top: 50px;
     }
 
     .contact-info {
         width: 220px;
-        height: 400px;
+        height: 275px;
         border-right: 3px solid #254579;
-        justify-content: space-between;
     }
 
     .contact-info a,
     .contact-info p {
-        font-size: 1.3em;
+        padding: 10px;
+        margin: 10px;
+        line-height: 1;
+        font-size: 1em;
     }
 
     .social {
         width: 220px;
-        height: 400px;
+        height: 275px;
         flex-direction: column;
         border-left: 3px solid #254579
+    }
+
+    .social img {
+        width: 50px;
     }
 
     header {
@@ -57,19 +67,19 @@
     .menu {
         display: flex;
         position: absolute;
-        top: 18.2%;
+        top: 13.4%;
         left: 230px;
         width: calc(100vw - 460px);
         background-color: #78A858;
         border: 3px solid #254579;
         justify-content: space-around;
         align-items: center;
-        padding: 20px;
+        padding: 10px;
     }
 
     .menu a {
         text-shadow: 2px 2px 2px rgb(136, 214, 136);
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         background-color: white;
         border-radius: 46px;
     }
@@ -81,9 +91,38 @@
     .call-to-action {
         width: calc(100vw - 460px);
         position: absolute;
-        top: 23.7%;
-        height: 500px;
+        top: 18.9%;
+        height: 300px;
         border: 3px solid #254579;
+    }
+
+    .button-box {
+        font-size: 1em;
+    }
+
+    .button-box button {
+        font-size: 1rem;
+    }
+
+    #city {
+        font-size: 1.4rem;
+    }
+
+    .weather p {
+        font-size: 1.1rem;
+    }
+
+    #weather-info {
+        font-size: 1.1em;
+    }
+
+    .words h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .coast p {
+        font-size: 1.2em;
     }
 
     #formDiv {
@@ -127,7 +166,7 @@
     }
 
     .weather-container {
-        margin-top: 450px;
+        margin-top: 250px;
         height: 300px;
         gap: 20px;
     }
@@ -163,9 +202,13 @@
     footer {
         margin-top: 20px;
         padding: 20px;
-        background-color: #de70b0;
-        text-align: center;
+        font-size: 1em;
     }
+
+    #last-modified {
+        font-size: 1em;
+    }
+
 
     .thanks {
         width: 100%;

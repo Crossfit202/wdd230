@@ -2,7 +2,7 @@
     .contact-social-container {
         display: flex;
         flex-direction: row;
-        height: 150px;
+        height: 100px;
     }
 
     .contact-info {
@@ -18,7 +18,7 @@
     }
 
     .social img {
-        width: 60px;
+        width: 30px;
     }
 
     .line {
@@ -36,7 +36,7 @@
     .weather-container {
         display: flex;
         margin: 20px;
-        height: 500px;
+        height: 300px;
     }
 
 
