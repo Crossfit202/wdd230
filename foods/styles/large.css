@@ -1,11 +1,6 @@
-@media only screen and (min-width: 1048px) {
+@media only screen and (min-width: 1040px) {
     .logo {
         display: none;
-    }
-
-    header {
-        height: 300px;
-        position: relative;
     }
 
     h1 {
@@ -69,7 +64,7 @@
     .menu {
         display: flex;
         position: absolute;
-        top: 13.4%;
+        top: 15.2%;
         left: 230px;
         width: calc(100vw - 460px);
         background-color: #78A858;
@@ -93,9 +88,15 @@
     .call-to-action {
         width: calc(100vw - 460px);
         position: absolute;
-        top: 20%;
+        top: 18.9%;
         height: 30%;
         border: 3px solid #254579;
+    }
+
+    .weather-container {
+        margin-top: 250px;
+        height: 300px;
+        gap: 20px;
     }
 
     .button-box {
@@ -167,11 +168,7 @@
         margin-left: 20px;
     }
 
-    .weather-container {
-        margin-top: 50px;
-        height: 300px;
-        gap: 20px;
-    }
+
 
     .weather,
     #forecast {
