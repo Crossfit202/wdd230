@@ -1,10 +1,11 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1048px) {
     .logo {
         display: none;
     }
 
-    body header {
-        height: 250px;
+    header {
+        height: 300px;
+        position: relative;
     }
 
     h1 {
@@ -92,8 +93,8 @@
     .call-to-action {
         width: calc(100vw - 460px);
         position: absolute;
-        top: 18.9%;
-        height: 300px;
+        top: 20%;
+        height: 30%;
         border: 3px solid #254579;
     }
 
@@ -127,15 +128,15 @@
     }
 
     #formDiv {
+        background-color: #DED369;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50px 1fr;
         width: calc(100vw - 460px);
         position: absolute;
-        top: 17.9%;
+        top: 19.9%;
         left: 230px;
         border: 3px solid #254579;
-        background-color: #f7fbe3;
     }
 
     #orderSummary {
@@ -167,7 +168,7 @@
     }
 
     .weather-container {
-        margin-top: 250px;
+        margin-top: 50px;
         height: 300px;
         gap: 20px;
     }
@@ -193,11 +194,7 @@
 
     #orderForm {
         width: 90%;
-        font-size: 1em;
-    }
-
-    #formDiv {
-        background-color: #DED369;
+        font-size: 0.98m;
     }
 
 
@@ -214,8 +211,8 @@
 
     .thanks {
         width: 100%;
-        margin-top: 625px;
-        font-size: 1em;
+        margin-top: 525px;
+        font-size: 1rem;
     }
 
     .freshMenu {

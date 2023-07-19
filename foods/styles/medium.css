@@ -1,4 +1,9 @@
 @media only screen and (min-width: 768px) {
+
+    .logo {
+        width: 60px;
+    }
+
     .contact-social-container {
         display: flex;
         flex-direction: row;
@@ -50,9 +55,21 @@
         height: 100px;
     }
 
+    #city {
+        font-size: 1rem;
+    }
+
+    .weather p {
+        font-size: 0.8rem;
+    }
+
     #forecast {
         border-left: 1px solid #254579;
         height: 100%;
+    }
+
+    #weather-info {
+        font-size: 0.7em;
     }
 
     .coast {
