@@ -1,7 +1,11 @@
 @media only screen and (min-width: 768px) {
 
     .logo {
-        width: 60px;
+        display: none;
+    }
+
+    h1 {
+        display: block;
     }
 
     .contact-social-container {
@@ -93,6 +97,15 @@
 
     .words {
         padding: 10px;
+    }
+
+    #headerDiv {
+        font-size: 1rem;
+    }
+
+    #submitButton {
+        max-width: 30%;
+        font-size: 1.2em;
     }
 
 

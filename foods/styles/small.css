@@ -131,6 +131,7 @@ h1 {
     padding: 10px;
     margin: 2px;
     text-align: center;
+    text-shadow: 2px 2px 2px rgb(136, 214, 136);
 }
 
 .menu a:hover {
@@ -411,6 +412,10 @@ strong {
     margin-right: 5px;
 }
 
+.summaryHeader {
+    display: none;
+}
+
 #order-summary-display {
     background-color: #78A858;
     padding: 10px;
@@ -420,12 +425,16 @@ strong {
     font-size: 0.7em;
 }
 
-#formDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+#fresh-main h2 {
+    margin: 20px;
+}
+
+#formFormat {
+    background-color: #ded369;
+    width: 100%;
+    padding: 10px;
+    border-top: 3px solid #254579;
+    border-bottom: 3px solid #254579;
 }
 
 #orderForm {
@@ -434,11 +443,10 @@ strong {
     justify-content: center;
     background-color: white;
     padding: 20px;
-    margin-bottom: 30px;
     border-radius: 20px;
-    border: 3px solid #254579;
     width: 100%;
     font-size: 0.7em;
+    border: 3px solid #254579;
 }
 
 
@@ -467,31 +475,54 @@ form button {
     border-top: 3px solid #254579;
     border-bottom: 3px solid #254579;
     margin: 20px 0;
-    padding: 10px;
-    background-color: white;
+    background-color: #78A858;
     font-size: 0.7em;
+    padding: 10px 0;
 }
 
-#formDiv {
-    background-color: #ded369;
-    width: 100%;
+.thanks-words {
+    background-color: white;
     padding: 10px;
-    margin: 20px 0;
     border-top: 3px solid #254579;
     border-bottom: 3px solid #254579;
 }
 
-textarea {
+.aboutUs {
+    background-color: #78A858;
+    padding: 20px;
+    border-top: 3px solid #254579;
+    border-bottom: 3px solid #254579;
+    margin: 10px 0 20px 0;
+}
+
+.aboutUs p {
+    background-color: white;
+    padding: 10px;
+    border: 3px solid #254579;
+    border-radius: 20px;
+}
+
+#headerDiv {
+    margin: 10px;
+    width: 100%;
+    border-top: 3px solid #254579;
+    border-bottom: 3px solid #254579;
+    font-size: 0.8em;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+#specialInstructions {
+    max-width: 225px;
+    max-height: 90px;
     margin: 10px 0;
 }
 
-#aboutDiv {
-    font-size: 0.7em;
-    background-color: white;
-    margin: 20px 0;
-    border-top: 3px solid #254579;
-    border-bottom: 3px solid #254579;
-    padding: 10px;
+#submitButton {
+    background-color: #de70b0;
+    max-width: 50%;
+    font-size: 1.2em;
 }
 
 .aboutContact a,
