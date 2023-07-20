@@ -423,22 +423,6 @@ strong {
     border: 3px solid #254579;
 }
 
-
-.fruit-header {
-    margin: 20px;
-    font-size: 0.9em;
-}
-
-.fruit-header h2:nth-child(2) {
-    display: none;
-}
-
-#fresh-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .thanks {
     border-top: 3px solid #254579;
     border-bottom: 3px solid #254579;
