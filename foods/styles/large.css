@@ -61,7 +61,7 @@
     .menu {
         display: flex;
         position: absolute;
-        top: 130px;
+        top: 134px;
         width: calc(100vw - 460px);
         background-color: #78A858;
         border: 3px solid #254579;
