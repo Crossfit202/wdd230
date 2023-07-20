@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Function to get the current drink count from local storage
+function getDrinkCount() {
+    return parseInt(localStorage.getItem("drinkCount")) || 0;
+}
+
+// Function to update the drink count in local storage
+function updateDrinkCount(count) {
+    localStorage.setItem("drinkCount", count.toString());
+}
+
 
 // Function to populate select elements with fruit options
 function populateFruitOptions() {
@@ -126,6 +136,11 @@ function handleSubmit(event) {
     orderSummary.setAttribute('id', 'order-summary-display')
     orderSummaryContainer.innerHTML = '';
     orderSummaryContainer.appendChild(orderSummary);
+
+    // Increment the drink count and update local storage
+    var currentCount = getDrinkCount();
+    var newCount = currentCount + 1;
+    updateDrinkCount(newCount);
 }
 
 
