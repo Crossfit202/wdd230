@@ -215,12 +215,21 @@ h2 {
     width: 80%;
     border: 2px solid #254579;
     font-size: 0.7em;
+    height: 100px;
 }
 
-.button-box button {
+.button-box h2 {
+    margin-bottom: 20px;
+}
+
+.makeDrink {
     margin-top: 10px;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 10px;
+    background-color: #f7fbe3;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 5px 2px 5px #78A858;
 }
 
 .weather-container {
