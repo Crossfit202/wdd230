@@ -374,10 +374,10 @@ footer {
 footer p,
 footer span {
     color: #081b38;
+    margin: 10px;
 }
 
 #last-modified {
-    margin-top: 10px;
     font-size: 0.9em;
 }
 
