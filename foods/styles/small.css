@@ -487,11 +487,12 @@ strong {
 }
 
 #submitButton {
-    background-color: #de70b0;
+    background-color: rgb(249, 184, 222);
     max-width: 50%;
     font-size: 1.2em;
     border-radius: 100px;
     height: 50px;
+    color: #081b38;
 }
 
 .aboutContact a,
