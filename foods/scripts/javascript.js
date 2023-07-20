@@ -13,15 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
   footer.textContent = 'Last modified: ' + lastModifiedDate;
 });
 
-// javascript.js
-
 document.addEventListener("DOMContentLoaded", function () {
   // Function to get the current drink count from local storage
   function getDrinkCount() {
-    return parseInt(localStorage.getItem("drinkCount")) || 0;
+    const countString = localStorage.getItem("drinkCount");
+    // Parse the countString to an integer and handle invalid values
+    const count = parseInt(countString, 10);
+    return isNaN(count) ? 0 : count;
   }
 
   // Display the drink count in the span element
   const drinkCountSpan = document.getElementById("drinkCount");
-  drinkCountSpan.textContent = getDrinkCount();
+  if (drinkCountSpan) {
+    drinkCountSpan.textContent = getDrinkCount();
+  }
 });
