@@ -61,7 +61,7 @@ h1 {
 .contact-info p {
     text-decoration: none;
     text-shadow: 2px 2px 2px rgb(136, 214, 136);
-    font-size: .8em;
+    font-size: .9em;
     line-height: 0;
     padding: 2px;
     color: #081b38;
@@ -214,7 +214,7 @@ h2 {
     padding: 10px;
     width: 80%;
     border: 2px solid #254579;
-    font-size: 0.7em;
+    font-size: 0.8em;
     height: 100px;
 }
 
@@ -269,12 +269,12 @@ h2 {
 }
 
 #city {
-    font-size: .7rem;
+    font-size: .9rem;
 }
 
 .weather p {
     padding: 5px;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 #forecast {
@@ -292,7 +292,7 @@ h2 {
 #weather-info {
     display: flex;
     border-bottom: 1px solid #183d6e;
-    font-size: 0.5em;
+    font-size: 0.8em;
 }
 
 #forecast p {
@@ -358,7 +358,8 @@ body::-webkit-scrollbar {
 
 .coast p {
     margin: 10px;
-    font-size: 0.5em;
+    font-size: 0.8em;
+
 }
 
 /* ---------- Footer ------------- */
@@ -368,7 +369,7 @@ footer {
     border-top: 3px solid #254579;
     margin-top: 10px;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 footer p,
@@ -378,7 +379,7 @@ footer span {
 }
 
 #last-modified {
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 /* ---------- Form ------------- */
@@ -433,7 +434,7 @@ strong {
     padding: 20px;
     border-radius: 20px;
     width: 100%;
-    font-size: 0.7em;
+    font-size: 0.8em;
     border: 3px solid #254579;
 }
 
@@ -442,7 +443,7 @@ strong {
     border-bottom: 3px solid #254579;
     margin: 20px 0;
     background-color: #78A858;
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 10px 0;
 }
 
